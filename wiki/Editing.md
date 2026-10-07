@@ -9,11 +9,11 @@ Changes are live immediately. Use **Page History** to compare revisions and reco
 
 ## Add a project call
 
-- Edit [Meetings](Meetings) to update the upcoming call.
-- After the call, open the appropriate year from [Recordings](Recordings), copy a table row, and update its index, date, topic, speaker, recording URL, and slides URL.
+- Edit [Meetings](Home#regular-project-calls) to update the upcoming call.
+- After the call, edit the [Recordings from Past Calls](Home#recordings-from-past-calls) table on the main page. Copy a row and update its index, date, topic, speaker, recording URL, and slides URL. Add the newest call at the top.
 - Keep one row per line. Escape a literal vertical bar in a cell as `\|`.
 - If a recording or slides are unavailable, leave their links blank rather than inventing a URL.
-- When starting a new year, create its page and add a link from Recordings.
+- Keep all years in this same table. Use your browser’s Find command to locate a call or year.
 
 ## Create a page or add an image
 
@@ -24,7 +24,7 @@ Click **New page**, give it a descriptive title, and save it. Add a link from th
 ```markdown
 ## Section heading
 - List item
-[Link to a page](Workstreams)
+[Link to a page](Home#workstreams)
 [External link](https://example.org)
 
 | Date | Topic | Speaker | Slides |
@@ -42,4 +42,4 @@ The live wiki has its own Git repository, separate from the main repository:
 git clone https://github.com/Time-Appliances-Project/wiki.wiki.git
 ```
 
-Pull this repository to back up current wiki edits and history. The `wiki/` directory in the main repository is the initial migration snapshot and does not automatically follow browser edits. Do not republish that initial snapshot over newer wiki changes.
+Pull this repository to back up current wiki edits and history. The `wiki/` directory in the main repository is a recovery snapshot and does not automatically follow browser edits. Do not republish that snapshot over newer wiki changes.

@@ -6,16 +6,16 @@ The TAP community wiki is hosted and edited directly on GitHub. No server, Docke
 
 ## Read and edit
 
-- [Project overview](https://github.com/Time-Appliances-Project/wiki/wiki/Project-overview)
-- [Workstreams](https://github.com/Time-Appliances-Project/wiki/wiki/Workstreams)
-- [Meetings](https://github.com/Time-Appliances-Project/wiki/wiki/Meetings)
-- [Recordings](https://github.com/Time-Appliances-Project/wiki/wiki/Recordings)
-- [Documents](https://github.com/Time-Appliances-Project/wiki/wiki/Documents)
+- [Project overview](https://github.com/Time-Appliances-Project/wiki/wiki/Home#welcome)
+- [Workstreams](https://github.com/Time-Appliances-Project/wiki/wiki/Home#workstreams)
+- [Meetings](https://github.com/Time-Appliances-Project/wiki/wiki/Home#regular-project-calls)
+- [Recordings](https://github.com/Time-Appliances-Project/wiki/wiki/Home#recordings-from-past-calls)
+- [Documents](https://github.com/Time-Appliances-Project/wiki/wiki/Home#documents)
 - [How to edit](https://github.com/Time-Appliances-Project/wiki/wiki/Editing)
 
 Sign in to GitHub, open a wiki page, click **Edit**, make the change, preview it, and click **Save page**. Repository collaborators with write access can edit and create pages. Reading is public. GitHub keeps the history of edits made since this migration.
 
-The long original TAP page is organized into topic pages and recordings by year. The restored recording archive includes all 168 past-call entries listed by OCP on 7 October 2026. Four pages with missing source material are explicitly marked. See [restoration notes](https://github.com/Time-Appliances-Project/wiki/wiki/Restoration-notes).
+The main TAP page restores the original continuous layout, with a contents list, workstreams, documents, meetings, and all recordings together. Former topic and year URLs link to its sections. The restored recording archive includes all 168 past-call entries listed by OCP on 7 October 2026. Four pages with missing source material are explicitly marked. See [restoration notes](https://github.com/Time-Appliances-Project/wiki/wiki/Restoration-notes).
 
 ## Live wiki and recovery repository
 
@@ -25,11 +25,11 @@ The **live wiki** is a separate Git repository. Browser edits are saved there im
 git clone https://github.com/Time-Appliances-Project/wiki.wiki.git
 ```
 
-This **main repository** stores the initial migration snapshot and the recovery materials:
+This **main repository** stores the recovery snapshot and the recovery materials:
 
 | Location | Purpose |
 | --- | --- |
-| `wiki/` | Initial GitHub Wiki Markdown and image snapshot |
+| `wiki/` | GitHub Wiki Markdown and image recovery snapshot |
 | `content/` | Prepared MediaWiki source for the recovered pages |
 | `migration/original-history.xml.gz` | Unchanged original export with 12 pages and 847 historical revisions |
 | `migration/snapshots/` | Current OCP pages used during recovery |
@@ -37,7 +37,7 @@ This **main repository** stores the initial migration snapshot and the recovery 
 
 The 847 recovered revisions are archived MediaWiki history, not entries in GitHub's page history. Later original revisions were not recovered. Linked videos, slides, specifications, and repositories remain external links.
 
-The `wiki/` snapshot does **not** automatically track subsequent browser edits. Edit the live Wiki for ordinary maintenance. Do not push the initial snapshot over newer wiki changes. No scheduled synchronization or automation overwrites the live Wiki.
+The `wiki/` snapshot does **not** automatically track subsequent browser edits. Edit the live Wiki for ordinary maintenance. Do not push the recovery snapshot over newer wiki changes. No scheduled synchronization or automation overwrites the live Wiki.
 
 ## Validate the migration
 
@@ -46,7 +46,7 @@ python3 scripts/validate_recovery.py
 python3 scripts/validate_github_wiki.py
 ```
 
-These checks verify archive checksums, recording coverage, image preservation, internal page targets, and marked recovery gaps. `scripts/export_github_wiki.py` is a one-time conversion tool, requires `markdownify` and `requests`, and uses a local recovery instance to render MediaWiki source. It does not publish to GitHub.
+These checks verify archive checksums, recording coverage, image preservation, internal page targets, and marked recovery gaps. `scripts/export_github_wiki.py` is the historical conversion tool for the original split-page migration, requires `markdownify` and `requests`, and uses a local recovery instance to render MediaWiki source. It does not publish to GitHub and must not be used to replace the current single-page layout.
 
 ## Optional MediaWiki copy
 

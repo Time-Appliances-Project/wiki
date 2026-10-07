@@ -1,23 +1,352 @@
 # Time Appliances Project
 
-Welcome to the TAP community wiki. The project brings together people working on precise time synchronization, timing appliances, and datacenter infrastructure.
+<img align="right" src="https://raw.githubusercontent.com/wiki/Time-Appliances-Project/wiki/images/Screenshot_2020-07-01_16.35.12.png" alt="Time Appliances Project" width="240">
 
-| Explore | Contents |
-| --- | --- |
-| [Project overview](Project-overview) | Mission, leadership, liaisons, and getting involved |
-| [Workstreams](Workstreams) | The 14 TAP workstreams and their resources |
-| [Meetings](Meetings) | Schedule, upcoming calls, and joining information |
-| [Recordings](Recordings) | 168 past project calls, organized by year |
-| [Documents](Documents) | Specifications, reference designs, and document repositories |
-| [Presentations and events](Presentations-and-events) | Summit sessions and presentations |
-| [Media and references](Media-and-references) | Videos, articles, and technical references |
+**Contents**
 
-## Contribute
+1. [Welcome](#welcome)
+2. [Mission Statement](#mission-statement)
+3. [Project Leadership](#project-leadership)
+4. [Liaisons](#liaisons)
+5. [Workstreams](#workstreams)
+6. [OCP Marketplace](#ocp-marketplace)
+7. [Get Involved](#get-involved)
+8. [Documents](#documents)
+9. [Regular Project Calls](#regular-project-calls)
+   - [Upcoming Calls](#upcoming-calls)
+   - [Recordings from Past Calls](#recordings-from-past-calls)
+10. [Call Calendar](#call-calendar)
+11. [Presentations & Events](#presentations--events)
+12. [TAP Media References](#tap-media-references)
 
-Sign in to GitHub and click **Edit** on a page to make a change. Repository collaborators with write access can edit and create pages. See [editing instructions](Editing).
+## Welcome
 
-## Recovery archive
+Welcome to the OCP Time Appliances Project wiki.
 
-This wiki was restored from public OCP sources on 7 October 2026. The original MediaWiki export, including **847 historical revisions**, is preserved in the [repository](https://github.com/Time-Appliances-Project/wiki). Four pages still need their original source recovered; see [restoration notes](Restoration-notes).
+This Project is open to the public and we welcome all those who would like to be involved.
 
-[OCP project page](https://www.opencompute.org/projects/time-appliances-project-tap/) · [TAP mailing list](https://ocp-all.groups.io/g/ocp-tap) · [TAP repositories](https://github.com/Time-Appliances-Project)
+Time is one of the key elements to improve efficiency in a distributed system. Theoretically, the performance of a distributed system depends on the synchronization of its elements. Several industries such as telecom, mobile, power, industrial, professional audio and video and many more have embraced the need for highly accurate and more importantly reliable distribution and synchronization of time and frequency across packet networks. Although the use case scenario for each of the industries is different, they all share one common thing and that is, time synchronization. Since there is a diverse need for time synchronization across different industries, driven from different use cases and applications, managing the needs of this industry chain can become a challenge.
+
+Time Appliances Project (TAP) aims to provide a platform to bring together the community, discuss, standardize and share technologies and solutions across industries with the datacenter applications and datacenter network infrastructure as the main interest. The project aims to bring together the community of datacenter operators, application developers, and equipment and semiconductor companies together to enable datacenter time-sensitive applications such as consistency in distributed systems, edge computing, AR/VR and IoT. These applications will greatly benefit from high accuracy, reliable, and scalable distribution and synchronization of time.
+
+IEEE 1588 Precision Timing Protocol (PTP) and other synchronization methods have been adopted by various industries to maximize the efficiency of various distributed system use cases. Each use case scenario comes with a set of requirements and configurations. These configurations are collected as a ‘PTP profile’. Time appliances project aims to support the development of a PTP profile for datacenter applications and datacenter network infrastructure. The profile will cover time-sensitive applications over OCP-compliant and PTP-aware networking infrastructure such as network switches, network clocks, network interface cards, timing modules & connectors, etc. Additionally, the profile will address various requirements for high accuracy and reliable distribution and synchronization of time, such as expected performance, networking, software API, data models, deployment and telemetry. The project also aims at openness and interoperability through the use of open-source PTP software implementations for timing appliances.
+
+IEEE P3335 Standard for Architecture and Interfaces for Time Card defines the generic architecture and interfaces of a time card system, which constitutes a traceable source of time-of-day to heterogeneous systems that distribute and/or use that time. Additionally, this standard defines figures of merit that univocally characterize the relevant performance of the Time Card. The Time Card provides a traceable time-of-day for systems directly attached to it, as well as networked distributed systems. Such systems include, but are not limited to, servers hosting the Time Card, and servers synchronized with the Time Card using such protocols as Precision Time Protocol (PTP) or Network Time Protocol (RFC Request for Comments) 5905). This standard also defines the basic building blocks of the Time Card and their interfaces in order to allow modularization. The main building blocks include time source, local oscillator, and time processor. Additionally, this standard defines interfaces between the Time Card and other systems. This includes physical interfaces that allow input and output of time-related signals. This also includes logical interfaces that are compatible with Portable Operating System Interface for UNIX (POSIX) and include for example an interface to share a Physical Hardware Clock (PHC). This allows sharing the time of day with other systems, as well as providing means for diagnostic and configuration. The definition of logical interfaces allows for a variety of Time Card’s form factors (e.g. Peripheral Component Interconnect Express (PCIe)) while ensuring uniform support from the operating system. Any device that complies with this standard provides performance figures that are obtained following the specifications of this standard. As such, different implementations of the Time Card can be easily compared in terms of performance.
+
+Datacenter applications are the primary target of time appliances project. In addition, the project extends to related topics on time synchronization in academia, research and other industries. The time appliances project brings together the community and will be highly collaborative through technical meetings and collaboration with other OCP Projects including the Networking, Storage, Server, and Telco Projects.
+
+*Disclaimer: Please do not submit any confidential information to the Project Community. All presentation materials, proposals, meeting minutes and/or supporting documents are published by OCP and are open to the public in accordance to OCP’s Bylaws and IP Policy. This can be found on the OCP [OCP Policies](https://www.opencompute.org/about/ocp-policies/) page. If you have any questions please contact OCP.*
+
+## Mission Statement
+
+1. Create specifications and references for **Data Center Timing** appliances, applications and networking infrastructure
+2. Promote openness in **Timing Appliances** and interfaces through open-source implementations
+
+## Project Leadership
+
+- Steering Committee Representative: [Elad Wind](mailto:elad@nvidia.com)
+- Project Leads: [Ahmad Byagowi](mailto:byagowi@turba.ai)
+
+## Liaisons
+
+- IEEE-IC Liaison: [Rodney Cummings](mailto:rodney.cummings@keysight.com) (Keysight)
+- ITU-T Liaison: [Silvana Rodrigues](mailto:Silvana.rodrigues@huawei.com) (Huawei)
+- ITU-T Liaison: [Stefano Ruffini](mailto:stefano.ruffini@calnexsol.com) (Calnex)
+
+## Workstreams
+
+|  | Project | Objective | Lead | Mailing List | Status |
+| --- | --- | --- | --- | --- | --- |
+| [#1](https://github.com/Time-Appliances-Project/Time-Card) | [Time Card](https://github.com/Time-Appliances-Project/Time-Card) | Development of the Time Card | [Ahmad Byagowi, Ph.D.](mailto:clk@wiwistamp.com) |  | [Submitted](https://www.opencompute.org/contributions) |
+| [#2](https://github.com/Time-Appliances-Project/Open-Time-Server) | [Open Time Server](https://github.com/Time-Appliances-Project/Open-Time-Server) | Development of an open time server for DC and Edge systems | [Dotan Levi](mailto:dotanl@nvidia.com)   [Oleg Obleukhov](mailto:leoleovich@fb.com) |  | [Submitted](https://www.opencompute.org/contributions) |
+| [#3](https://github.com/Time-Appliances-Project/DC-PTP-Profile) | [Data Center PTP Profile](https://github.com/Time-Appliances-Project/DC-PTP-Profile) | Development of a PTP Profile tailored for data center applications | [Michel Ouellette](mailto:michelouellette@meta.com) |  | [Submitted](https://www.opencompute.org/contributions) |
+| [#4](https://github.com/Time-Appliances-Project/Precise-Time-API) | [Precision Time APIs](https://github.com/Time-Appliances-Project/Precise-Time-API) | Time APIs to disseminate the time error (error bound) and bring accurate time to the user space | [Georgi Chalakov](mailto:gemicha@gmail.com) | [OCP-TAP-APIs](https://ocp-all.groups.io/g/OCP-TAP-APIs) | [Submitted](https://github.com/opencomputeproject/Time-Appliance-Project/tree/master/Precise-Time-API) |
+| [#5](TAP-Oscillators) | [Oscillators](TAP-Oscillators) | Classification and measuring of oscillators | [Gary Giust, Ph.D.](mailto:ggiust@sitime.com) |  | [Submitted](https://www.opencompute.org/contributions) |
+| [#6](TAP-PTP-Servos) | [PTP Servos](TAP-PTP-Servos) | Design and Implement Advanced PTP Servos | [Alon Regev](mailto:alon.regev@keysight.com) |  | Work in progress |
+| [#7](TAP-Instrumentation) | [Instrumentation and Measurement](TAP-Instrumentation) | Open source instrumentation and measurement/testing tools for PTP | [Anand Ram](mailto:anand.ram@calnexsol.com)   [Julian St. James](mailto:julianstj@fb.com) |  | Work in progress |
+| [#8](Wireless-TimeSync) | [Precision Time Synchronization over Wireless](Wireless-TimeSync) | Open source Implementations of Precision Time Synchronization over Wireless | [Nobuyasu Shiga, Ph.D.](mailto:shiga@nict.go.jp)   [Julian St. James](mailto:julianstj@fb.com) |  | Work in progress |
+| [#9](PTM-Readiness) | [Precision Time Measurement Readiness Status](PTM-Readiness) | List of Hardware and Software with Precision Time Measurement Support | [Kevin Stanton, Ph.D.](mailto:kevin.b.stanton@gmail.com)   [Julian St. James](mailto:julianstj@fb.com) |  | Work in progress |
+| [#10](Academia-Industry-Engagement) | [Time Synchronization Industry-Academia workstream (TSIAW)](Academia-Industry-Engagement) | Academic and Industry Engagement for Advancement of Precision Time Applications | [Dan Biederman](mailto:Dan.Biederman@gmail.com)   [Hesham Albakoury](mailto:helbakoury@gmail.com) |  | Work in progress |
+| [#11](Open-Atomic-Ethernet) | [Open Atomic Ethernet (OAE)](Open-Atomic-Ethernet) | Open Atomic Ethernet (OAE) | [Paul Borrill, Ph.D.](mailto:paul.borrill@ocproject.net)   [Sahas Munamala](mailto:sahas.munamala@ocproject.net) | [OCP OAE](https://ocp-all.groups.io/g/ocp-oae) | Work in progress |
+| [#12](Open-Time-Server-Cluster) | [Open Time Server Cluster (OTS-C)](Open-Time-Server-Cluster) | Specification for a cluster built on top of OTS | [Wil Myrick, Ph.D.](mailto:myrickwil@gmail.com) | [OTS-C](https://ocp-all.groups.io/g/ocp-tap-ots-c) | Work in progress |
+| [#13](Unified-Intelligent-Infrastructure) | [Unified Intelligent Infrastructure (UII)](Unified-Intelligent-Infrastructure) | Driving collaboration, innovation and coherence across hybrid multi-cloud infrastructure, AI systems,  distributed architectures, time-aware computing, and emerging domains such as quantum and beyond. | [Ankur Sharma](mailto:ankur.sharma@ocproject.net) | [UII](https://ocp-all.groups.io/g/ocp-tap-uii) | Work in progress |
+| [#14](Lunar-Timekeeping-System) | [Lunar Timekeeping System (LTS)](Lunar-Timekeeping-System) | Lunar Timekeeping,  distributed architectures, time-aware computing, and emerging domains such as quantum and beyond. | [Philip Linden](mailto:philiplinden@openlunar.org)   [Ashley Kosak](mailto:ashleykosak@openlunar.org) | [LTS](https://ocp-all.groups.io/g/ocp-tap-lts) | Initiated |
+
+## OCP Marketplace
+
+- [Time Appliance Products](https://www.opencompute.org/products?cloud_products%5BrefinementList%5D%5Bhardware.categories.Cards%5D%5B0%5D=Retimer%20Cards&cloud_products%5BrefinementList%5D%5Bhardware.categories.Cards%5D%5B1%5D=Time%20Cards)
+
+## Get Involved
+
+- [TAP mailing list](https://ocp-all.groups.io/g/ocp-tap)
+- [Time Appliances calendar](https://ocp-calendar.pages.dev/)
+- [TAP repositories](https://github.com/Time-Appliances-Project)
+
+## Documents
+
+- [Charter](https://www.opencompute.org/wp-content/uploads/2026/07/c6eee7bea1d297fe82bd18a7f38dfb1806ec1806.pdf)
+- [TAP GitHub](https://github.com/opencomputeproject/Time-Appliance-Project)
+- [TAP LinkedIn](http://linkedin.com/company/ocp-tap)
+- [TAP Facebook](https://www.facebook.com/ocptap)
+- [TAP YouTube](https://www.youtube.com/@OCPTAP)
+- [Google Drive Document Repository](https://drive.google.com/drive/folders/1EDE9Pj1eZj2sF7fUGOnVmwGTf4U6yonr?usp=sharing)
+
+| Workstream | Name | Format | Version | Date |
+| --- | --- | --- | --- | --- |
+| **#1** | [Open Time Server](https://github.com/opencomputeproject/Time-Appliance-Project/tree/master/Open-Time-Server) | Reference Architecture | [v1](https://github.com/opencomputeproject/Time-Appliance-Project/tree/master/Open-Time-Server) | July 28, 2021 |
+| **#1** | [Time Card](https://github.com/opencomputeproject/Time-Appliance-Project/tree/master/Time-Card) | Spec and design package | [v1](https://github.com/opencomputeproject/Time-Appliance-Project/tree/master/Time-Card) | July 28, 2021 |
+| **#1** | [TAP Software](https://github.com/opencomputeproject/Time-Appliance-Project/raw/master/Precise-Time-API) | Software | [v1](https://github.com/opencomputeproject/Time-Appliance-Project/raw/master/Precise-Time-API/Precise%20Time%20API%201.0.docx) | July 28, 2021 |
+| **#2** | Data Center PTP Profile | Spec | [v2](https://drive.google.com/file/d/18Y3r1pVkGsEuPmcHkLtuwrQbYi6s-ypM/view?usp=share_link) | November 3, 2022 |
+| **#2** | Data Center PTP Profile | Spec | [v1](https://drive.google.com/file/d/1e69lDl2d-zupbbHasedUQqg-3NP0TIpt/view?usp=drivesdk) | August 31, 2021 |
+| **#4** | [Classification and Measuring of Oscillators](https://www.opencompute.org/documents/ocp-tap-oscillator-spec-jan-8-2022-docx-pdf) | Spec | [v1](https://www.opencompute.org/documents/ocp-tap-oscillator-spec-jan-8-2022-docx-pdf) | January 8, 2022 |
+
+## Regular Project Calls
+
+- Wednesdays at 11am PST, starting on July 15th, 2020. Repeats every 2 weeks following that
+
+Join the meeting from your computer, tablet or smartphone:
+
+- [Zoom Room Link](https://opencompute-org.zoom.us/j/82085665807?pwd=cUwzaTh1UE9HZEpRRUsvVk5Db1NIQT09)
+- Meeting ID: 820 8566 5807
+
+Dial in
+
+- +1 929 205 6099 US (New York)
+- +1 301 715 8592 US (Washington DC)
+- +1 312 626 6799 US (Chicago)
+- +1 253 215 8782 US (Tacoma)
+- +1 346 248 7799 US (Houston)
+- +1 669 900 6833 US (San Jose)
+
+### Upcoming Calls
+
+|  | Date | Topics | Speakers |
+| --- | --- | --- | --- |
+| #169 | Oct-07, 2026 | Neo Clouds & AI Sovereignty: Deterministic Timing as the Foundation of Trusted Distributed Intelligence | Ankur Sharma, Ramki Ramakrishnan |
+
+### Recordings from Past Calls
+
+| Index | Date | Topics | Speakers | Slides |
+| --- | --- | --- | --- | --- |
+| #168 | Sep-23, 2026 | [TSN for Aerospace](https://www.youtube.com/watch?v=Be101XDiGvo) | Jorge Garrido, Ph.D. | [Slides](https://drive.google.com/file/d/14_h-uRwI_voKq1fstshYnM3TdO0ygxEx/view?usp=drive_link) |
+| #167 | Sep-09, 2026 | [Simplified Approach for Grandmaster](https://www.youtube.com/watch?v=HgfcXiYoo4g) | Octo Halsema | [Slides](https://drive.google.com/file/d/1g6EkQ7o1mZC1c0dNYRUiqSAcRx2rvATb/view?usp=drive_link) |
+| #166 | Aug-26, 2026 | [TimeHAT Applicatin with PTP4L and PHC2SYS](https://www.youtube.com/watch?v=jcvOs5cIX68) | Tom Brady | [Slides](https://drive.google.com/file/d/1OjbxOmK1YrxFm1w_a-ZDuMtuGrgPCf0G/view?usp=drive_link) |
+| #165 | Aug-12, 2026 | [Sub-Nanosecond at Home, with GNSS and AI](https://www.youtube.com/watch?v=1DAI40a6PBg) | Bob Van Valzah | [Slides](https://drive.google.com/file/d/1xfnEbHko76CsSfnhKF2MW8h7gPQu_jNv/view?usp=drive_link) |
+| #164 | July-29, 2026 | [UniFI ProAV switching with PTP Clocking](https://www.youtube.com/watch?v=irgX7XD-5rY) | Thomas Hildebrand | [Slides](https://drive.google.com/file/d/1TWXVixD3RI_5zOyru_u1ADzjcxx8Oeyr/view?usp=drive_link) |
+| #163 | Jul-15, 2026 | [PTP4SDN: A Low-Jitter PTP Clock Provisioning Service via Software Cross-Timestamping](https://www.youtube.com/watch?v=87KqXzyTu98) | Liang-Min Wang, Ph.D. | [Slides](https://drive.google.com/file/d/14Xwm3atOTiBYn5BGS65e8uN6XD2Tsxu5/view?usp=drive_link) |
+| #162 | Jul-01, 2026 | [Precision Time Requirements in Media of IP](https://www.youtube.com/watch?v=OfP_bWtDGzI) | Andreas Hildebrand | [Slides](https://drive.google.com/file/d/1LNCaJsg-Hxfn_GtNr09YhkpL7H1zTngK/view?usp=drive_link) |
+| #161 | Jun-17, 2026 | [EPPSilon Precision at the Edge](https://www.youtube.com/watch?v=vgTYFPzbY6I) | Greg Armstrong | [Slides](https://drive.google.com/file/d/1PUGmGkfLKvq7KHjdusljz_7FVgb-yD4J/view?usp=drive_link) |
+| #160 | Jun-03, 2026 | [Broadcast Applications Engineering](https://www.youtube.com/watch?v=HXiVXLxzz3c) | Steve Kolta | [Slide](https://drive.google.com/file/d/1L7y0W15MLKB6EvwM92KtEpFuDV_5eeiX/view?usp=drive_link) |
+| #159 | May-20, 2026 | [Atomic Clocks as Precision Timing Sources](https://www.youtube.com/watch?v=ppLJU2HjHyY) | Thejesh Bandi, Ph.D. | [Slide](https://drive.google.com/file/d/1yAYrvcLasakHlcSfnf4tVaKC-JIs_XU4/view?usp=drive_link) |
+| #158 | May-06, 2026 | [GPS – a Single Point of Failure?](https://www.youtube.com/watch?v=aLNaunImIQ8) | Dana A. Goward | [Slides](https://drive.google.com/file/d/1mQ3AyD4-8MAHEhElCUuAoIgERP0Y-zO-/view?usp=drive_link) |
+| #157 | Apr-22, 2026 | [Achieving Sub-Nanoseconds Time Comparison Accuracy for Wired Asynchronous Clock Devices](https://www.youtube.com/watch?v=2LfkcN6YQZA) | Masahiro Kawano | [Slides](https://drive.google.com/file/d/1S5RY-9tbh_TFy-PzRBV0sFOlglpEP-lv/view?usp=drive_link) |
+| #156 | Apr-08, 2026 | [World-Wide GEO-stationary satellite based time broadcast with sub 100ns accuracy to UTC](https://www.youtube.com/watch?v=iIcIX7BrreY) | Roel de Vries | [Slides](https://drive.google.com/file/d/1gwiK5waV5stGKiXEmDB6IhnOgOo0Z_lR/view?usp=drive_link) |
+| #155 | Mar-25, 2026 | [When Observability Lies: Causality Failures in Distributed AI Inference Systems](https://www.youtube.com/watch?v=91R2KUfPexA) | Ankur Sharma | [Slides](https://drive.google.com/file/d/1zfshswr93TlDsvjGxL2PW-F-W4CtKDyt/view?usp=drive_link) |
+| #154 | Mar-11, 2026 | [Frequency Ratio of The 229mTh Nuclear Isomeric Transition](https://www.youtube.com/watch?v=sIWvEzxIC0w) | Kjeld Beeks, Ph.D. | [Slides](https://drive.google.com/file/d/1fI4bAtDLTKhhSrpNLoIRZ1R7mGUXX3Rs/view?usp=drive_link) |
+| #153 | Feb-25, 2026 | [PTP at Nanosecond Scale: Precision vs. Practice](https://www.youtube.com/watch?v=iAYznMugd24) | Nikolaus Kerö | [Slides](https://drive.google.com/file/d/1W8h6dEgpx7iNxX4MZmjgHydHrNhkfQjW/view?usp=drive_link) |
+| #152 | Feb-11, 2026 | [A Resilient and Tail-Optimal RDMA NIC for Distributed ML Workloads](https://www.youtube.com/watch?v=1NNUfU0KI0s) | Ertza Warraich, Ph.D. | [Slides](https://drive.google.com/file/d/1d0CALMR5-N6slIpMI-Imd9b4V68QSsh1/view?usp=drive_link) |
+| #151 | Jan-28, 2026 | [Time is not a conserved quantity](https://www.youtube.com/watch?v=zvqZwaeOqNU) | Paul Borrill, Ph.D. | [Slides](https://drive.google.com/file/d/16YuClYaluN5i6jAIXihly0eR8OQ20OZq/view?usp=drive_link) |
+| #150 | Jan-14, 2026 | [Learning while designing a counter/timer](https://www.youtube.com/watch?v=Bbr8ateR9mA) | Erik Kaashoek | [Slides](https://drive.google.com/file/d/1OBTtksuAH-bufcpqcRnVjT4aOiPC-d0t/view?usp=drive_link) |
+| #149 | Dec-31, 2025 | [From Timeouts to Transactions for Deterministic, Observable Layer-2 Network](https://www.youtube.com/watch?v=1ERUXoEvcEE) | Paul Borrill, Ph.D. | [Slides](https://drive.google.com/file/d/1lMoZxVv1WF22k2FsdOIlUSm2e8cq455j/view?usp=drive_link) |
+| #148 | Dec-17, 2025 | [Best-In-Class Phase Noise for Next Gen Connectivity by Super High Frequency Crystal Resonator](https://www.youtube.com/watch?v=k102HpEDxOg) | Tadayuki Nomura | [Slides](https://drive.google.com/file/d/1h8-Z9oU0LwxNdg1VznsPULJ9vGFd3tju/view?usp=drive_link) |
+| #147 | Dec-03, 2025 | [UNH-IOL Overviwew on the NSF POSE OpenPHASE Project](https://www.youtube.com/watch?v=9ymr4lwK-5s) | Bob Noseworthy | [Slides](https://drive.google.com/file/d/1m37aICpuxOHIeRJvdmFyVTGwtOZwribk/view?usp=drive_link) |
+| #146 | Nov-19, 2025 | [GNSS Fraud Detection with Community-owned RTK Network](https://www.youtube.com/watch?v=u6B_U4CVva8) | Daniel Ammann | [Slides](https://drive.google.com/file/d/1A9g3UCGWM0qc2H4lCowkq1V-H66Wx-Be/view?usp=drive_link) |
+| #145 | Nov-05, 2025 | [GEODNET: Global Earth Observation Decentralized Network](https://www.youtube.com/watch?v=HSUDkp--QKQ) | Yudan Yi, Ph.D. | [Slides](https://drive.google.com/file/d/11z-bqT1REQ0i3CIKI0Klyk24-tBEjY8q/view?usp=drive_link) |
+| #144 | Oct-22, 2025 | [Network Support For Scalable And High Performance Cloud Exchanges](https://www.youtube.com/watch?v=gMbCEG0m5qM) | Haseeb Ashfaq | [Slides](https://drive.google.com/file/d/1gWMv6ERTfpDRL_4EDyHPJx34NuKkGFTY/view?usp=drive_link) |
+| #143 | Oct-08, 2025 | [Prototyping a Low-Cost CSAC-Based Time Card for Lunar CubeSat Missions](https://www.youtube.com/watch?v=T2D5vwwT4Zg) | Philip Linden | [Slides](https://drive.google.com/file/d/1SKLeHBT0_oGN_W0Fx9sQOsiKrzr5mLmB/view?usp=drive_link) |
+| #142 | Sep-24, 2025 | [Advancing Timing Synchronization in Ethernet Adapters](https://www.youtube.com/watch?v=fFMRTa4t5Z8) | Jason Rock | [Slides](https://drive.google.com/file/d/1vCwweoTI1WKQNuz0an-40JrDY5vDVO4n/view?usp=drive_link) |
+| #141 | Sep-10, 2025 | [NIST’s High-Stability Single-Ion Clock](https://www.youtube.com/watch?v=P_85K0jCQkg) | Mason Marshall, Ph.D. | [Slides](https://drive.google.com/file/d/1quRl5cQeED39Kr-MTsj52xuj46emT5am/view?usp=drive_link) |
+| #140 | Aug-27, 2025 | [Firefly: Scalable- Ultra-Accurate Clock Synchronization for Datacenters](https://www.youtube.com/watch?v=QLPP0-iNrjk) | Yuliang Li, Ph.D. | [Slides](https://drive.google.com/file/d/1n-zdPkG3VQFzQ6wKdso9-YWqFcQSj6Uz/view?usp=drive_link) |
+| #139 | Aug-13, 2025 | [Advances in Network Time Security Standardization](https://www.youtube.com/watch?v=rFt9DOBtiQY) | Karen O’Donoghue | [Slides](https://drive.google.com/file/d/1OHeMF_NT-TGOrbKR_LtOq2cUAUFc2mNk/view?usp=drive_link) |
+| #138 | July-30, 2025 | [Frequency counter evolution](https://www.youtube.com/watch?v=684u1op1xZU) | Staffan Johansson | [Slides](https://drive.google.com/file/d/1hHHLsUGh0rM1hea4_FX8eCv2VoN3_21T/view?usp=drive_link) |
+| #137 | July-16, 2025 | [BPS: The Terrestrial GPS Timing Replica, its Status and Future Plan](https://www.youtube.com/watch?v=w1YBc53lm3k) | Tariq Mondal, Sam Matheny | [Slides](https://drive.google.com/file/d/1gT42nQxR1MNr_HF0iFBvK-BwI-M66fCa/view?usp=drive_link) |
+| #136 | July-02, 2025 | [Time Coordinated Computing (TCC) and Time-Sensitive Networking (TSN)](https://www.youtube.com/watch?v=_5IgMFRGmqo) | David Zage, Ph.D. | [Slides](https://drive.google.com/file/d/1xk6y1QS0kCczydoX_Kw6J2dQdIGDWpAh/view?usp=drive_link) |
+| #135 | Jun-18, 2025 | [UberNIC Precision Time](https://www.youtube.com/watch?v=ggF8S-aZD7U) | Seth Friedman | [Slides](https://drive.google.com/file/d/1vDwwVUUkq2Hs5OGC_K9HjgMDmRoMOXis/view?usp=drive_link) |
+| #134 | Jun-04, 2025 | [Time Transfer and Ensembles Across Moving Platforms](https://www.youtube.com/watch?v=JOVKWiqOQiM) | Marc Weiss, Ph.D. | [Slides](https://drive.google.com/file/d/1oByms9CCOigl0lqNJMdOMUamgdjgjcIE/view?usp=drive_link) |
+| #133 | May-21, 2025 | [The Fugro AtomiChron High Accuracy GNSS Augmentation Service](https://www.youtube.com/watch?v=KW_n6TcWW9Y) | Roel de Vries | [Slides](https://drive.google.com/file/d/15_esmnMp0UmD-At29XVnAdldxo6JY-Vj/view?usp=drive_link) |
+| #132 | May-07, 2025 | [PTN/ePTS for timing in WAN](https://www.youtube.com/watch?v=ssfBkIXkWxk) | Magnus Danielson | [Slides](https://drive.google.com/file/d/1SBS_JFk-vYIhgX7867Mf23DxEbyyQ1BE/view?usp=drive_link) |
+| #131 | Apr-16, 2025 | [Vortex: High-Efficiency ML Pipelines for Inference and Knowledge Retrieval](https://www.youtube.com/watch?v=pUla9eyH5uQ) | Ken Birman. Ph.D. | [Slides](https://drive.google.com/file/d/1K1KBs0Rdi53hgIUaNYqRFPmTTFz4DW22/view?usp=drive_link) |
+| #130 | Apr-9, 2025 | [Self-Stabilizing Distributed Clock Synchronization](https://www.youtube.com/watch?v=2jRTtf5hvDI) | Shlomi Dolev. Ph.D. | [Slides](https://drive.google.com/file/d/1Z6Ns7a5fivKMn79GrMGAQE__BLJ31Gbh/view?usp=drive_link) |
+| #129 | Mar-26, 2025 | [Implementation of a Chip-Scaled Atomic Clock](https://www.youtube.com/watch?v=T0K2mvdoZus) | Will Krzewick | [Slides](https://drive.google.com/file/d/1ZZ4H3ZCrfmEjBItwf_gblxinRlOm6qUC/view?usp=drive_link) |
+| #128 | Mar-12, 2025 | [IEEE 1588, Introduction and the latest activities](https://www.youtube.com/watch?v=R2NendDckY4) | Rodney Cummings | [Slides](https://drive.google.com/file/d/17pAfXlvBkPsstTF0x0fle53voJW2bFcH/view?usp=drive_link) |
+| #127 | Feb-26, 2025 | [Distributed Run-time Environments for HPC](https://www.youtube.com/watch?v=_AHJwS-aYZ8) | Camille Coti, Ph.D. | [Slides](https://drive.google.com/file/d/1eNjKwO_cDJdSrXgrPDgBTJrF12Q1zz4Z/view?usp=drive_link) |
+| #126 | Feb-19, 2025 | [SFPs for Open Source RF over Fiber design](https://www.youtube.com/watch?v=Usmn4kZOezc) | D. Sobel, H. Trinh, M. Ciniglia, J. St. James | [Slides](https://drive.google.com/file/d/1mAnDlz6YbYJnXtnztERMaGdFJDn--Fym/view?usp=drive_link) |
+| #125 | Feb-12, 2025 | [Femtosecond precision fiber-optic timing distribution and synchronization systems](https://www.youtube.com/watch?v=keEhlhZJ154) | Kemal Shafak. Ph.D. | [Slides](https://drive.google.com/file/d/11o2YN_nkCY0oI4gnjWbaXaLUrd3eZf1X/view?usp=drive_link) |
+| #124 | Jan-29, 2025 | [STAC Benchmark Council](https://www.youtube.com/watch?v=w8ln-t2DalA) | Jack Gidding | [Slides](https://drive.google.com/file/d/1vLxm1WH7BOpzumkq1LJ8IwVeLz5fkc0p/view?usp=drive_link) |
+| #123 | Jan-15, 2025 | [Time Sync for Congestion Control](https://www.youtube.com/watch?v=zqp9L3X5ZQ0) | Med Belhadj, Ph.D. | [Slides](https://drive.google.com/file/d/1BwlRDvVPW8-0tjTD9JIblHfk7Ehfviuh/view?usp=drive_link) |
+| #122 | Jan-08, 2025 | [Global Summit Round Table Summary](https://www.youtube.com/watch?v=nEG6Bne-tYI) | Rodney Cummings | [Slides](https://drive.google.com/file/d/1Ef8X5hVLW0MQr6iYFfn3EtKfpH392oTj/view?usp=drive_link) |
+| #121 | Jan-01, 2025 | [Ethernet Spacetime](https://www.youtube.com/watch?v=kJMdgaYW66k) | Paul Borrill, Ph.D | [Slides](https://drive.google.com/file/d/11bxvZTxjcjmTKK1XBBl97Nij-WYwEIxU/view?usp=drive_link) |
+| #120 | Dec-18, 2024 | [Yours, Mine and Ours](https://www.youtube.com/watch?v=JOLwYKJAYWk) | Pat Helland, Daniel May | [Slides](https://drive.google.com/file/d/11Fk0xEf-3Uu5WEXOjo3rLFC02Q9O8Exh/view?usp=drive_link) |
+| #119 | Dec-11, 2024 | [Taming Tail Latency: Performance Isolation in Large-Scale Distributed Systems](https://www.youtube.com/watch?v=G3xhLIuqj58) | Jonathan Perry, Ph.D. | [Slides](https://drive.google.com/file/d/1C5y_3yqmRxLnwh61nl1tNw7uO4fJg_sa/view?usp=drive_link) |
+| #118 | Dec-04, 2024 | [Timeout and Retry (TAR) in Distributed Systems](https://www.youtube.com/watch?v=BbdiMWUt8dw) | Paul Borrill, Ph.D. | [Slides](https://drive.google.com/file/d/1yXLCt8uCUVhh-pBttNlqcYocArvN_Yye/view?usp=drive_link) |
+| #117 | Nov-20, 2024 | [Picosecond Optical Timing Networks](https://www.youtube.com/watch?v=yVodmTeLexM) | Jonathan Roslund, Ph.D. | [Slides](https://drive.google.com/file/d/1qE5Qxz_yo1lns6Rtzr-L3n8Of9KgT-SP/view?usp=drive_link) |
+| #116 | Nov-06, 2024 | [A revolutionary approach to video wall processing architecture supported by precision time protocol](https://www.youtube.com/watch?v=4A5xqKGUANc) | Ben Cope, Ph.D. | [Slides](https://drive.google.com/file/d/1wT4nUN_0YQSLRIe-kOfqlEPcxFJ-fHSj/view?usp=drive_link) |
+| #115 | Oct-23, 2024 | [DPLL over Fiber for low cost two-way time transfer](https://www.youtube.com/watch?v=IxsUO4n2xtM) | Julian St. James | [Slides](https://drive.google.com/file/d/1TQAPyFp70dAvkXZ3JaqIQN7xz4q9jbYJ/view?usp=drive_link) |
+| #114 | Oct-09, 2024 | [Precision Frequency and Time Measurement over Packet Networks with the PCIe Common Clock](https://www.youtube.com/watch?v=Vfo0A75cr30) | Simon Kennedy | [Slides](https://drive.google.com/file/d/1N-cyMXjhqY1cRPqiXfNF1P6MtqInk5sN/view?usp=drive_link) |
+| #113 | Sep-25, 2024 | [The Significance of Accurate Timekeeping and Synchronization in Trading Systems](https://www.youtube.com/watch?v=OcixXE-nKCc) | Francisco Girela Lopez, Ph.D. | [Slides](https://drive.google.com/file/d/1pu1RqP_rb5WVJeRy7cWek9PLvOzY9k9X/view?usp=drive_link) |
+| #112 | Sep-23, 2024 | [Kickoff meeting for IEEE Industry Connection on Timing in Data Centers](https://www.youtube.com/watch?v=C_8wEnmI9t0) | Rodney Cummings, Ahmad Byagowi Ph.D. | [Slides](https://drive.google.com/file/d/16ToxMoUwHQ-3QFo16MdE6x0ckdWdmOOD/view?usp=drive_link) |
+| #111 | Sep-11, 2024 | [Free-space optical time transfer: Principles and Applications](https://www.youtube.com/watch?v=Zn7UwWQPso0) | Emily Caldwell, Ph.D. | [Slides](https://drive.google.com/file/d/1EZhiuCOaFnkBCz-tyij6InuZLVCIzhMV/view?usp=drive_link) |
+| #110 | Aug-28, 2024 | [How we used Recurrence to Eliminate Matrix-Multiply from Language Models](https://www.youtube.com/watch?v=J9hpw1_QcnQ) | Jason Eshraghian, Ph.D. | [Slides](https://drive.google.com/file/d/18LP8eokw30D9NK1EeKj1A0Sn1AcFvrqa/view?usp=drive_link) |
+| #109 | Aug-23, 2024 | [Programming Distributed Systems](https://www.youtube.com/watch?v=T68NOO16sZw) | Mae Milano, Ph.D. | [Slides](https://drive.google.com/file/d/1JWduR_gC3eOlaQEXqt2IfqTK6heLBx9n/view?usp=drive_link) |
+| #108 | Aug-14, 2024 | [Hybrid Machine Learning Fusion Architecture for PNT Situational Awareness](https://www.youtube.com/watch?v=Mr8ZT9hVN8M) | Stanley Radzevicius, Ph.D. | Slides |
+| #107 | Aug-05, 2024 | [The (stable) path towards high-performance quantum networks](https://www.youtube.com/watch?v=vBY4jR0sl_Q) | Krister Shalm, Ph.D. | Slides |
+| #106 | Jul-31, 2024 | [What is a clock and what can we do with it?](https://www.youtube.com/watch?v=8VTsOlHLIC4) | Pauli Erker, Ph.D. | [Slides](https://drive.google.com/file/d/1uwHFlANZx1yNmIeRTdu4HYQbgda8t8hx/view?usp=drive_link) |
+| #105 | Jul-17, 2024 | [Race Conditions and Exactly Once Semantics In Distributed Systems](https://www.youtube.com/watch?v=ll5aF-oN-YE) | Paul Borrill, Ph.D. | [Slides](https://drive.google.com/file/d/1VlkKtfPgC7E7LXISdC54pntjwvkdFhTD/view?usp=sharing) |
+| #104 | Jul-03, 2024 | [Latest Trends in Crystals & Oscillators](https://www.youtube.com/watch?v=yScnZ28SR_w) | Madura Fontaine | [Slides](https://drive.google.com/file/d/1UQbfySDCN_Yu4NjE2sXU3WCA5J51-1jc/view?usp=sharing) |
+| #103 | Jun-19, 2024 | [Synchronization Use Cases and Requirements for Data Center Network](https://www.youtube.com/watch?v=idTguOB77qU) | Liuyan Han, Ph.D. | [Slides](https://docs.google.com/presentation/d/11tXQ5C3QTkH3NFm5xTnRyWMGw-Aj9wFs/edit?usp=sharing&ouid=104727018165459345315&rtpof=true&sd=true) |
+| #102 | Jun-05, 2024 | [A Façade of Newtonianism in Networking and it’s Consequences](https://www.youtube.com/watch?v=QSJAEjFbqas) | Paul Borrill, Ph.D. | [Slides](https://drive.google.com/file/d/12MmAgaxQuUEZ4kmEw__eJkPzLyhByso-/view?usp=sharing) |
+| #101 | May-22, 2024 | [Does Accurate Time Matter for Tasks that need Consensus?](https://www.youtube.com/watch?v=afhCGW8neRE) | Ken Birman, Ph.D. | [Slides](https://docs.google.com/presentation/d/1qkp_6FwoINUjiiCEnt6U-umGMQtZe2YZ/edit?usp=sharing&ouid=104727018165459345315&rtpof=true&sd=true) |
+| #100 | May-08, 2024 | [PTP: There at the Beginning](https://www.youtube.com/watch?v=V_D5Af-YLSM) | John Eidson, Ph.D., Kang Lee, Doug Arnold, Ph.D. | [Slides](https://drive.google.com/file/d/17xgPMDQ4iSSaaYqz7kBtyMnMb9L4BPv9/view?usp=sharing) |
+| #99 | Apr-24, 2024 | [Real-World Optical Timekeeping](https://www.youtube.com/watch?v=Rp_d0E0K3KE) | Marty Boyd, Ph.D. | [Slides](https://drive.google.com/file/d/121Z-g-3GdvQClJQL_x9y7IM4rjEC0IAF/view?usp=sharing) |
+| #98 | Apr-10, 2024 | [Clock Coherence: from Terrestrial Microdatacenters to Interstellar Attoprobeswarms](https://www.youtube.com/watch?v=3DCpzntiZ_Y) | Paul Borrill, Ph.D. | [Slides](https://drive.google.com/file/d/1LtrQROT7HAcPHAVJ3Uu8BnmAJQ0nmWE5/view?usp=sharing) |
+| #97 | Mar-27, 2024 | [The future of UT1 vs UTC](https://www.youtube.com/watch?v=tttuSRy4W1g) | Patrizia Tavella, Ph.D. | [Slides](https://docs.google.com/presentation/d/1z9t9stZvrqVjmtDmyGRoGNBasBilt6RX/edit?usp=sharing&ouid=104727018165459345315&rtpof=true&sd=true) |
+| #96 | Mar-13, 2024 | [What is Time?](https://www.youtube.com/watch?v=6DWzdODOxF4) | Demetrios Matsakis, Ph.D. | [Slides](https://docs.google.com/presentation/d/1ViiniuINJPJRI7fo1dHe25HjbSFhYXqf/edit?usp=sharing&ouid=104727018165459345315&rtpof=true&sd=true) |
+| #95 | Feb-28, 2024 | [Reliable, Fast Failure Detection with Deterministic Interactions in Datacenters](https://www.youtube.com/watch?v=pzjGIf-ew3g) | Davide Rovelli | [Slides](https://drive.google.com/file/d/1y91mD7zIzwMeHkigHD18oudCiF2qx8oL/view?usp=sharing) |
+| #94 | Feb-14, 2024 | [Precision Data Movement](https://www.youtube.com/watch?v=Mi418LzynhA) | Dan Biederman | [Slides](https://drive.google.com/file/d/11ToEkmXtAJQ6hT2UE4a4zJN0uPKP-6Wy/view?usp=sharing) |
+| #93 | Jan-31, 2024 | [GNSS augmented sub-ns precision timing and 4 constellation NMA](https://www.youtube.com/watch?v=pSnQuAtU8OM) | Roel de Vries | [Slides](https://drive.google.com/file/d/1pnoM8hpeWWqqJnSIA_2wSC5IJ0Ux6nLv/view?usp=sharing) |
+| #92 | Jan-17, 2024 | [Let’s talk Servos – Key to Synchronization](https://www.youtube.com/watch?v=KfdGy5jHgLI) | Greg Armstrong | [Slides](https://drive.google.com/file/d/1h5P1aSmpeOw9jjzRnA9NmePsa1KB1yrl/view?usp=sharing) |
+| #91 | Jan-03, 2024 | [Precision Timekeeping Applications Discussion for Optical Atomic Clocks](https://www.youtube.com/watch?v=IcaWsfMBsy4) | Judith Olson, Ph.D. | [Slides](https://drive.google.com/file/d/1xnih8QwdoUMZ9akEeDFYrIOJ8OUYKJLd/view?usp=sharing) |
+| #90 | Dec-20, 2023 | [Atomic Clocks – Quantum theory in action for 80 years and counting](https://www.youtube.com/watch?v=tpKjjSQ6yuA) | David Chandler | [Slides](https://drive.google.com/file/d/1toyLLtwsKgTuVTfydHN6WVdl_L9K3Ic7/view?usp=sharing) |
+| #89 | Dec-06, 2023 | [5G PNT Using TV Transmitters](https://www.youtube.com/watch?v=Rp0heFYIzq0) | Stefan Maier | [Slides](https://drive.google.com/file/d/1_xuypHoWuIwGeze2a-fSZrpCwFGh_1hA/view?usp=drive_link) |
+| #88 | Nov-22, 2023 | [Avnu Alliance: TSN Testing & Certification programs](https://www.youtube.com/watch?v=2pCmmla50GE) | Dave Cavalcanti & Genio Kronauer | [Slides](https://drive.google.com/file/d/1PJOw1bpWK9vZ5RqJ9Tt3dEU6umRUv7kr/view?usp=drive_link) |
+| #87 | Nov-08, 2023 | [Pendulum: Sync your clocks with memory-safe NTP and PTP](https://www.youtube.com/watch?v=3dLXbOjCkns) | David Venhoek | [Slides](https://drive.google.com/file/d/1X2GUlF2qQBCjKnpFTr0D5u44oxG6FrpA/view?usp=sharing) |
+| #86 | Oct-25, 2023 | [Anomaly Detection in Raw GNSS Data](https://www.youtube.com/watch?v=OBtxwtkcMN8) | Maksim Barodzka | [Slides](https://drive.google.com/file/d/1eIucIUHD9SJBMCE8lp8ki2ebrVRZCKKf/view?usp=drive_link) |
+| #85 | Oct-11, 2023 | [ÜberNIC: an Ethernet Adapter with CXL and PTM Support](https://www.youtube.com/watch?v=ZqS5FCu-c-w) | Seth Friedman | [Slides](https://drive.google.com/file/d/1Y7OoA4xQqerFP_NK3iVxv3Z3T6jm__Sl/view?usp=sharing) |
+| #84 | Sep-27, 2023 | [Resilient Time Systems](https://www.youtube.com/watch?v=Z5Qo5o3cydI) | Robert Lindauer | [Slides](https://drive.google.com/file/d/1w-CB2bqPBBM5u7He-0ci5KRP9XQDfZHi/view?usp=sharing) |
+| #83 | Sep-13, 2023 | [Time in TigerBeetle](https://www.youtube.com/watch?v=TMHuTHoH4z4) | Joran Dirk Greef | [Slides](https://drive.google.com/file/d/1-c9yAW3iFkCRzuD1NU9kP47Jy_ER_zZN/view?usp=sharing) |
+| #82 | Sep-06, 2023 | [Precision Frequency Measurement over PCIe](https://www.youtube.com/watch?v=UCGDe95qW8c) | Julian St. James | [Slides](https://docs.google.com/presentation/d/1qTW_YAglMlAnUvz76P0BZidEhEjmL-5v/edit?usp=sharing&ouid=104727018165459345315&rtpof=true&sd=true) |
+| #81 | Aug-30, 2023 | [Using Satelles LEO PNT to sync OCP-TAP applications](https://www.youtube.com/watch?v=voCbHs6OrHw) | Charlie Meyer | [Slides](https://drive.google.com/file/d/1Gg500QMU07DZsGzbFuZCI8_86pgqiQca/view?usp=sharing) |
+| #80 | Aug-23, 2023 | [Precision Time in the Last Centimeters with PCIe PTM: A Deeper Dive](https://www.youtube.com/watch?v=JOucm1vjk8o) | Kevin Stanton, Ph.D. | [Slides](https://docs.google.com/presentation/d/1e0Ls-H9d8yR4pjitUA0gvdg7iETZVhNe/edit?usp=sharing&ouid=104727018165459345315&rtpof=true&sd=true) |
+| #79 | Aug-16, 2023 | [PTP Track Hound v2 – Central Monitoring Hub for Timing-Critical Infrastructure](https://www.youtube.com/watch?v=WQ7Fw_7Bhq4) | Thomas Behn | [Slides](https://drive.google.com/file/d/18KaVi2oLI3tRtlPRv6xERaBBFKbzPVNw/view?usp=sharing) |
+| #78 | Aug-02, 2023 | [Digital Time Services](https://www.youtube.com/watch?v=uH2BekT86x4) | Judah Levine, Ph.D. | [Slides](https://drive.google.com/file/d/1Xt7o4DZ8sAp8UGrd6hULQKxliUXmqEiT/view?usp=sharing) |
+| #77 | Jul-19, 2023 | [Quantum Time Transfer](https://www.youtube.com/watch?v=g5MopRhq0KE) | David Mitlyng | [Slides](https://drive.google.com/file/d/1Z9ma59EhhJ9aQpl8slKmCRFesHj78iVn/view?usp=sharing) |
+| #76 | Jul-05, 2023 | [Secure Timing Architecture for Untrusted Edge Systems](https://www.youtube.com/watch?v=54W5OYsEN70) | Fatima Anwar Ph.D. | [Slides](https://drive.google.com/file/d/1VBqPgoMPiuJbP3neGJ7G2xEy_hFhcRos/view?usp=drive_link) |
+| #75 | Jun-21, 2023 | [The Network is The Clock: adding resilience at the network layer with vPRTC](https://www.youtube.com/watch?v=lr7R3zTGyzw) | Christian Farrow | [Slides](https://drive.google.com/file/d/1k89IgcCAxQglaONoIRgjWAlOZFdpFL6-/view?usp=sharing) |
+| #74 | Jun-07, 2023 | [Brain’s clock and Time Dissemination in the Body](https://www.youtube.com/watch?v=sIW7ZP7lW5E) | Oliver Rawashdeh, Ph.D. | [Slides](https://drive.google.com/file/d/1GiTpmssbvEoFKDV8PUiwb6ngRByP9LZt/view?usp=sharing) |
+| #73 | May-24, 2023 | [Cultivating Trust In Time](https://www.youtube.com/watch?v=O98jBe51h3I) | Ya-Shian Li-Baboud | [Slides](https://drive.google.com/file/d/1Prf25gpgpOJAoPTeLuLGRlPDZHomE-th/view?usp=sharing) |
+| #72 | May-10, 2023 | [Jamming and Spoofing of GNSS Timing Devices](https://www.youtube.com/watch?v=NAZdqiJk5kA) | Thomas Rødningen | [Slides](https://drive.google.com/file/d/1Dxia0kTfSHPBxuw-FscyLWtW5l-nBGw9/view?usp=sharing) |
+| #71 | Apr-26, 2023 | [PTP-based fbclock vs. HLC](https://www.youtube.com/watch?v=K9RRRXdIkqI) | Lu Pan | [Slides](https://drive.google.com/file/d/1SV7Fvtdb9bau4s3Id4pqaNnJilWYIbxX/view?usp=sharing) |
+| #70 | Apr-12, 2023 | [PTM Round Table](https://www.youtube.com/watch?v=seyJWYAvi5M) | L. Johnsen, K. Stanton, W. Wasko, B. Wheeler | [Slides](https://drive.google.com/file/d/1FcZT31S3GGhB-fxqKQ-_apV2vz38vFW8/view?usp=share_link) |
+| #69 | Mar-29, 2023 | [COTS based Jitterbug Timing Measurement System](https://www.youtube.com/watch?v=cBUBKpG4gH0) | Myrick Wilbur, Ph.D. | [Slides](https://drive.google.com/file/d/1g9mI16YDC-ow8iHmxQcshURhTlWXvrcU/view?usp=sharing) |
+| #68 | Mar-15, 2023 | [Integrated acoustic resonators in commercial Fin-FET technology](https://www.youtube.com/watch?v=CVKsoN2SLO0) | Dana Weinstein, Ph.D. | [Slides](https://drive.google.com/file/d/1cvhG04kgPhoSMuDkPzkwB8o6lr3i07Bn/view?usp=share_link) |
+| #67 | Mar-01, 2023 | [Timing Resilience and Security at the Core of GNSS Technology](https://www.youtube.com/watch?v=Sbv-dMhyGbM) | Gustavo Lopez | [Slides](https://drive.google.com/file/d/1TKM1c1qNhhr-HZAAqUqnxOKD7EA9mIEZ/view?usp=sharing) |
+| #66 | Feb-15, 2023 | [Trading off Consistency and Availability in Cyber-Physical Systems](https://www.youtube.com/watch?v=zkYnXzKp1hI) | Edward A. Lee, Ph.D. | [Slides](https://drive.google.com/file/d/1vZ6XE6EtGG6bBenenfsHhCJae82MP6NF/view?usp=sharing) |
+| #65 | Feb-01, 2023 | [SyncESMC – an ITU-T G.781 Multi-Clock ESMC Implementation](https://www.youtube.com/watch?v=YIlpZELUHYc) | Vipin Sharma | [Slides](https://docs.google.com/presentation/d/17DaakAe6mvpIGzVCOMH31n1J9usw7JSb/edit?usp=sharing&ouid=104727018165459345315&rtpof=true&sd=true) |
+| #64 | Jan-18, 2023 | [Overview of Timestamping and Synchronization Infrastructure at the Deutsche Boerse](https://www.youtube.com/watch?v=s2Q3mllpx10) | Georg Sauthoff, Ph.D. | [Slides](https://drive.google.com/file/d/1MV1HdF1Wmkp0q_tli0U966SZP1H5lahR/view?usp=sharing) |
+| #63 | Jan-04, 2023 | [Time & Frequency Measurements with Picosecond Streaming Time-to-Digital Converters](https://www.youtube.com/watch?v=TawbFDHZjB4) | Helmut Fedder, Ph.D. | [Slides](https://drive.google.com/file/d/1W2w3_bueBM1nox2pU-3wEckSx5WW1N_9/view?usp=sharing) |
+| #62 | Dec-21, 2022 | [Precision Timing for Digital Substations](https://www.youtube.com/watch?v=Vc4-c_Z3mCw) | Fred Steinhauser, Ph.D. | [Slides](https://drive.google.com/file/d/1Im1Q5_ltfWVHkpWq9CRzuSWRBv3aJzsc/view?usp=sharing) |
+| #61 | Dec-07, 2022 | [G-SINC: Global Synchronization Infrastructure for Network Clocks](https://www.youtube.com/watch?v=zwCzhqqRMvw) | Marc Frei | [Slides](https://drive.google.com/file/d/1f8lCatOc5MZlx0GU5hqpiNJuFG9ejP1U/view?usp=sharing) |
+| #60 | Nov-23, 2022 | [Enabling Pico-Second Level Space-Time Synchronization](https://www.youtube.com/watch?v=Socr5MdnOYo) | Nobuyasu Shiga, Ph.D. | [Slides](https://drive.google.com/file/d/1GlD55agZARONkRA8AIzeky3tPP3dCQ59/view?usp=share_link) |
+| #59 | Nov-09, 2022 | [Picosecond-Level Timing and Synchronization](https://www.youtube.com/watch?v=Fu3RUCKnlVs) | Jamil Abo-Shaeer, Ph.D. | [Slides](https://drive.google.com/file/d/1zbhtGYedFTii290_ZcaJnQP8-1tj09HH/view?usp=sharing) |
+| #58 | Oct-26, 2022 | [The Current offerings of TCXOs, OCXOs and Rubidium Standards](https://www.youtube.com/watch?v=x88kk2r8jNI) | Kory Stone | [Slides](https://drive.google.com/file/d/1L2riFaMqAKX0bZJ5UIXxM9s8e8xkmGg9/view?usp=sharing) |
+| #57 | Oct-12, 2022 | [Resilient PNT Standards for Datacenters](https://www.youtube.com/watch?v=r68OZKb5Gio) | Guy Buesnel | [Slides](https://drive.google.com/file/d/1rX64Hra_6k-Ij-FgdzLa_8GmczkxS3sh/view?usp=sharing) |
+| #56 | Sep-21, 2022 | [Resilient Time for the Future](https://www.youtube.com/watch?v=cp2CesB17sE) | Leon Lobo, Ph.D. | [Slides](https://drive.google.com/file/d/1m1WxhrXNNv7b5N0pkNLk_kCcoXL10MEX/view?usp=sharing) |
+| #55 | Sep-07, 2022 | White Rabbit for Datacenters | Benoit Rat | [Slides](https://drive.google.com/file/d/1p2wZeBY2RDcec9EnvfpqVcrAeuYFjB8N/view?usp=sharing) |
+| #54 | Aug-24, 2022 | Time Transfer Across the Network: One Hop at a Time | Thomas Kernen, Nir Nitzani, Bar Shapira | [Slides](https://drive.google.com/file/d/1iyhCawVWr0-Y3m0R6l--47IVtzF09E5_/view?usp=sharing) |
+| #53 | Aug-10, 2022 | [Graham: Synchronizing Clocks by Leveraging Local Clock Properties](https://www.youtube.com/watch?v=IO0aHMi84oM) | Ali Najafi, Ph.D. | [Slides](https://docs.google.com/presentation/d/1CS9iPW5vJxjrSzh4c6xfhUCX1-a0uPlf/edit?usp=sharing) |
+| #52 | Jul-27, 2022 | [PTP Automation without Validation is just making mistakes faster](https://www.youtube.com/watch?v=nn33fnp7ruk) | Ariel Hendel | [Slides](https://drive.google.com/file/d/1vkZiaTappOJ8dCb9RiKolEl6xQL1EIFs/view?usp=sharing) |
+| #51 | Jul-13, 2022 | [Window of Uncertainty](https://www.youtube.com/watch?v=SmihXfvAYXQ) | Ahmad Byagowi, Ph.D. | [Slides](https://docs.google.com/presentation/d/1QOmwQz5O25e0QwsYo2osJLT8EapIcFxd/edit#slide=id.p1) |
+| #50 | Jun-29, 2022 | [GNSS Time References](https://www.youtube.com/watch?v=C9muR-ImBg8) | Christian Voit | [Slides](https://drive.google.com/file/d/1jsEDGjpU3K5c5By7lxW3tIf-PR-vVmT7/view?usp=sharing) |
+| #49 | Jun-15, 2022 | [Time Sync in Time Aware Networks](https://www.youtube.com/watch?v=uu-GFXE2FEU) | Dhiman Chowdhury | [Slides](https://drive.google.com/file/d/14Jf57pbHoOCM1vPP3BDdL6jUx0dalo-_/view?usp=sharing) |
+| #48 | Jun-01, 2022 | [Advanced TimeCard and SyncModule for datacenter synchronization](https://www.youtube.com/watch?v=QBWvModhORI) | Nir Laufer | [Slides](https://docs.google.com/presentation/d/1f2kQ63WBQthrot0he5iLhSAHm2jcbRlt/edit?usp=sharing&ouid=115393317224397591365&rtpof=true&sd=true) |
+| #47 | May-18, 2022 | [GNSS Power over Fiber System](https://www.youtube.com/watch?v=lUfP2ybFDO0) | Larry Conway | [Slides](https://drive.google.com/file/d/1xnctMrsKDJn7udxB-bincLFfz44gPglC/view?usp=sharing) |
+| #46 | May-04, 2022 | [Optical Timekeeping Efforts at NIST](https://www.youtube.com/watch?v=16NLBlzq5wo) | Jeff Sherman, Ph.D. | [Slides](https://drive.google.com/file/d/1X1URxxz4JZTdmAp4eiglpp07_03ygUwK/view?usp=sharing) |
+| #45 | Apr-20, 2022 | [Precision Time Applications](https://www.youtube.com/watch?v=ri_hojgOaw8) | Dan Biederman | [Slides](https://drive.google.com/file/d/10t-jfT8sWCByCnVMNxT8vmRlSZS0a2di/view?usp=sharing) |
+| #44 | Apr-06, 2022 | [Digitized Clocking Technology, Achieving Time Sync Inside and Across a Distributed a Systems](https://www.youtube.com/watch?v=qtcoaXpMP5s) | Petre Minciunescu, Ph.D. | [Slides](https://drive.google.com/file/d/1ikp-SQ2fzD19miCGQFvTa_0rtMmryK-U/view?usp=sharing) |
+| #43 | Mar-23, 2022 | [Opening the FPGA code of the Time Card](https://www.youtube.com/watch?v=jWn0j2fYUM8) | Sven Meier & Thomas Schaub | [Slides](https://drive.google.com/file/d/1vHgtRRjC_1AaNBZe0kBP1IawKhZ3fKR6/view?usp=sharing) |
+| #42 | Mar-09, 2022 | [Measuring and Monitoring Options for Time Sync Infrastructures](https://www.youtube.com/watch?v=3FO-SAyFRwU) | Heiko Gerstung | [Slides](https://docs.google.com/presentation/d/1UT73AFPgdOfeFD8XAkt05CUIEngKynHO/edit?usp=sharing&ouid=104727018165459345315&rtpof=true&sd=true) |
+| #41 | Feb-23, 2022 | [A Continuous UTC; May We Get Rid of Leap Seconds?](https://www.youtube.com/watch?v=EbJeTXGdjD4) | Patrizia Tavella, Ph.D. | [Slides](https://drive.google.com/file/d/1bXHs4EI1J9BRzkU4Z0pg0KCSwmfcOPT3/view?usp=sharing) |
+| #40 | Feb-09, 2022 | [Getting Precision Time Synchronization to End Users](https://www.youtube.com/watch?v=zUGrtL9bY2U) | Julian St. James | [Slides](https://drive.google.com/file/d/1ncZ-k72bzSsQoei4PPWyN0rWdt_0kOib/view?usp=sharing) |
+| #39 | Jan-26, 2022 | [Using LEO Satellites for Time Synchronization](https://www.youtube.com/watch?v=kWm93JJgJDU) | Tyler Reid, Ph.D. | [Slides](https://drive.google.com/file/d/1HhNBkhQsh2ucdlxfKtlnPk7dhp4yNlpX/view?usp=sharing) |
+| #38 | Jan-12, 2022 | [Antenna Challenges for GNSS Receivers](https://www.youtube.com/watch?v=VBc-Pfovz-g) | Daniel Suster | [Slides](https://drive.google.com/file/d/1PUiHj8_dsOOd6L3VnraldWSkbbajCXAF/view?usp=sharing) |
+| #37 | Dec-15, 2021 | [PCIe PTM: Timing in the Last Inch](https://www.youtube.com/watch?v=gCAJI-fyqXY) | Christopher Hall | [Slides](https://drive.google.com/file/d/1OKAOjRzZHlaNoHE7USXpOyIBU0_1EytU/view?usp=sharing) |
+| #36 | Dec-01, 2021 | [Application of Physical Layer Synchronization/Syntonization in a Data Center Environment](https://www.youtube.com/watch?v=b6GF8xnsU8U) | Med Belhadj, Ph.D. | [Slides](https://drive.google.com/file/d/1fle9tBnJfYL-Sg_PdHkfntxOSgLoos8n/view?usp=sharing) |
+| #35 | Nov-17, 2021 | [Oscillator Workstream Update](https://www.youtube.com/watch?v=YgXr7sxDCyg) | Gary Guist, Ph.D. | [Slides](https://drive.google.com/file/d/1k9ZTTYAqdyviUKSJd_JmM8CH3LKBPf5w/view?usp=sharing) |
+| #34 | Nov-03, 2021 | [Time Service for the Virtual Entity](https://www.youtube.com/watch?v=DePrsow74FQ) | Dotan Levi | Slides |
+| #33 | Oct-20, 2021 | [Squared: A P2P Overlay Network for Setting up a Scalable PTP clock Synchronization Mesh](https://www.youtube.com/watch?v=FjLMXCivB0g) | Lasse Johnsen | [Slides](https://drive.google.com/file/d/1oWJqS68MjEFX-34LW7aHZ_QlOnBL-qnm/view?usp=sharing) |
+| #32 | Oct-06, 2021 | [Validating PTP follower clock accuracy](https://www.youtube.com/watch?v=pBL5AE6k9Cc) | Alon Regev | [Slides](https://drive.google.com/file/d/1BLqaCoF8tnZtwA-jlMmfs1_xNNCR8Nd8/view?usp=sharing) |
+| #31 | Sep-22, 2021 | [Transparent Clock and its Applications](https://www.youtube.com/watch?v=dLu6j3JqkIk) | Amit Oren | [Slides](https://drive.google.com/file/d/1gB8uSXkX4OV7yNYUdg8JLFqNeYwYG3Et/view?usp=sharing) |
+| #30 | Sep-08, 2021 | [Miniaturized Rubidium Oscillator With The Lowest SWAP Based on Double Resonance](https://www.youtube.com/watch?v=a_s_OVabTdY) | Christian S. Ph.D., Stavros M. Ph.D., Jean-Arnold C | [Slides](https://drive.google.com/file/d/1Uap6vcQyrY-X9sWkjE3IZCxdaWHTnWET/view?usp=sharing) |
+| #29 | Aug-25, 2021 | [Fearless Global Transactions using Clock Synchronization in CockroachDB](https://www.youtube.com/watch?v=FAkvV5fCWlQ) | Nathan Van Benschoten | [Slides](https://drive.google.com/file/d/1otcpgZa4eXwfkcTTRgiOT_SqrkogOeZh/view?usp=sharing) |
+| #28 | Aug-11, 2021 | [White Rabbit High Accuracy Timing](https://www.youtube.com/watch?v=Pu-MNBcwZuQ) | Francisco Girela Lopez, Ph.D. | [Slides](https://drive.google.com/file/d/1lj6lauC6XSzPOqteTLr3M6aSRkKgufEO/view?usp=sharing) |
+| #27 | Jul-28, 2021 | [Sundial: Fault-tolerant Clock Synchronization for Datacenters](https://www.youtube.com/watch?v=42wHQw3EOfE) | Gautam Kumar & Yuliang Li, Ph.D. | [Slides](https://drive.google.com/file/d/11caMgoSODkOvsl2gNF-dGna3dNJXdrCX/view?usp=sharing) |
+| #26 | Jul-14, 2021 | [Holdover Challenges in NIC Based Boundary Clocks](https://www.youtube.com/watch?v=DPXN4QEG_mM) | Eyal Cohen | [Slides](https://docs.google.com/presentation/d/1AtLNeFJ-j1lYHvAYR4TOdZ48U9hh34WX/edit?usp=sharing&ouid=104727018165459345315&rtpof=true&sd=true) |
+| #25 | Jun-30, 2021 | [GNSS Anti-Jamming and Spoof Mitigation](https://www.youtube.com/watch?v=H9tkFnMc7BM) | Benoit Krummenacker | [Slides](https://drive.google.com/file/d/1PHNCSBq2IndOxIK29MsHthadiUbP9NcE/view?usp=sharing) |
+| #24 | Jun-16, 2021 | [Introduction to IEEE1588-2019](https://www.youtube.com/watch?v=SyU-mRtP48I) | Doug Arnold, Ph.D. | [Slides](https://drive.google.com/file/d/1tBimVperDldY4cIMY0wbjvVZYbvXCLjn/view?usp=sharing) |
+| #23 | Jun-02, 2021 | Introduction to MAC and CSACs | Robert Lutwak, Ph.D. | [Slides](https://drive.google.com/file/d/1VYnkZlWSSs66f9x9BA-5Nza-myv3w3Qz/view?usp=sharing) |
+| #22 | May-19, 2021 | [Open Synchronization implementations on Linux/k8s Clusters](https://www.youtube.com/watch?v=GGEaY5O-EsY) | Timo Jokiaho & Pasi Vaananen | [Slides](https://drive.google.com/file/d/1qU87Fys2wDBNK_3kyylwOCW1J752IPzi/view?usp=sharing) |
+| #21 | May-05, 2021 | [White Rabbit: An Accurate Time and Frequency Transfer over Ethernet](https://www.youtube.com/watch?v=S0R9TaTPiUk) | Maciej Lipinski, Ph.D. | [Slides](https://drive.google.com/file/d/14x5HVGhhRivVNs1JYO1kPvsthuuP-Kce/view?usp=sharing) |
+| #20 | Apr-21, 2021 | [Time Scale Ensembles in Uncertain Environments](https://www.youtube.com/watch?v=DHXodCSQA5U) | Marc A. Weiss, Ph.D. | [Slides](https://drive.google.com/file/d/1ERLlsJz70t8_GDSlVnDEOCxqWWYO7jYd/view?usp=sharing) |
+| #19 | Apr-07, 2021 | [Clock and Oscillator Statistics and Characterization Techniques](https://www.youtube.com/watch?v=hBjOlbLPB10) |  | [Slides](https://drive.google.com/file/d/1V8zDETnZX_PjxGYog8bKgokKqnUjR95X/view?usp=sharing) |
+| #18 | Mar-24, 2021 | [Introduction to Project Corundum for Time services](https://www.youtube.com/watch?v=tlOusFeMtiE) | Alex Forencich, Ph.D. | [Slides](https://drive.google.com/file/d/1GsFh9jlnloI6f7JOSQjV66LTi2o07BXD/view?usp=sharing) |
+| #17 | Mar-10, 2021 | [Oscillators Classification, **Workstream #4** goals and kickoff](https://www.youtube.com/watch?v=_jYf2JX-N9Y) | Gary Giust, Ph.D. | [Slides](https://drive.google.com/file/d/1O2iMLKKRqtesziBLPQ9PTh23Yyg_Efx2/view?usp=sharing) |
+| #16 | Feb-24, 2021 | [GNSS Timing](https://www.youtube.com/watch?v=bWKzMMe_4y0) | Samuli Pietila | [Slides](https://drive.google.com/file/d/16VXQewg5pqYnJonnelbB9XlZVnLEX0xl/view?usp=drive_link) |
+| #15 | Feb-10, 2021 | [Centralized GNSS Monitoring and Assurance](https://www.youtube.com/watch?v=ikNP1lPm4aI) | Nir Laufer | [Slides](https://drive.google.com/file/d/11iWllqXTSWFuXR3p53nk4o4DNDCqBUa6/view?usp=sharing) |
+| #14 | Jan-27, 2021 | [Huygens and its Applications](https://www.youtube.com/watch?v=fV3_7WKeQB0) | Balaji Prabhakar, Ph.D. | [Slides](https://drive.google.com/file/d/1zX9ynYGoNK-NQ4O0Tg-CX_17qIJ6LfEf/view?usp=drive_link) |
+| #13 | Jan-13, 2021 | [TAP 2020 Recap, 2021 Plans](https://www.youtube.com/watch?v=5ZR2qE1LwCM) | Ahmad Byagowi, Ph.D. | [Slides](https://drive.google.com/file/d/1H16HOlaNx4C72A3odW-Lc4_F-yrDAi_M/view?usp=sharing) |
+| #12 | Dec-16, 2020 | [Chip Scaled Atomic Clocks](https://www.youtube.com/watch?v=wHYvS7MtBok) | John Kitching, Ph.D. | [Slides](https://drive.google.com/file/d/1wbp7ZlPDmCtxvjqx0dyiY8MA9jOz75bu/view?usp=sharing) |
+| #11 | Dec-02, 2020 | [Data Center PTP Profile, **Workstream #2** proposal](https://www.youtube.com/watch?v=CBiR1d8zfgQ) | Michel Ouellette | Slides |
+| #10 | Nov-18, 2020 | [Computer Timekeeping and Synchronization](https://www.youtube.com/watch?v=4iipelv_4TY) | Kevin Stanton, Ph.D. | [Slides](https://drive.google.com/file/d/12J7785mAmjNo9TsI3jZ11-QuRsDDDIIO/view?usp=sharing) |
+| #09 | Nov-04, 2020 | [Time Sync in TSNs](https://www.youtube.com/watch?v=nMOM1j7N81c) (History of TSN, IEEE 802.1AS Overview) | Hesham ElBakoury | [Slides](https://drive.google.com/file/d/1y1ds3bGuJcNRlHgVnmjQGeXhCfZ5sy4q/view?usp=sharing) |
+| #08 | Oct-21, 2020 | [Starter’s guide to ptp4l](https://www.youtube.com/watch?v=hXQ4SbNPv-s) | Maciej Machnikowski | [Slides](https://drive.google.com/file/d/10GT5zVZTPChbUTnlSt9dbb4J0fesHBJi/view?usp=sharing) |
+| #07 | Oct-07, 2020 | [Timing card implementation](https://www.youtube.com/watch?v=G20FF7PuEP0) | Ahmad Byagowi, Ph.D. | Slides |
+| #06 | Sep-23, 2020 | [Practical Use Cases of Synchronized Clocks](https://www.youtube.com/watch?v=W6784mGyYGU) | Georgi Chalakov | Slides |
+| #05 | Sep-09, 2020 | [Data Center PTP Profile, **Workstream #2** goals and draft spec](https://www.youtube.com/watch?v=UCux0SrW8nE) | Michel Ouellette | Slides |
+| #04 | Aug-26, 2020 | [Open Grandmaster (Open Time Server), **Workstream #1** goals and draft spec](https://www.youtube.com/watch?v=61kGJZp4jgs) | Oleg Obleukhov | Slides |
+| #03 | Aug-12, 2020 | [TAP Vision as well as the impact of precision oscillator noise on PTP time error](https://www.youtube.com/watch?v=dpOQm2UwuEw) | Dotan Levi | Slides |
+| #02 | Jul-29, 2020 | [Detailed Project Proposal and Discussion](https://www.youtube.com/watch?v=t_Pskf9CtC4) | Michel Ouellette | Slides |
+| #01 | Jul-15, 2020 | [Proposal to launch OCP-TAP Incubation Project](https://www.youtube.com/watch?v=Fznz0T_rC2M) | Ahmad Byagowi, Ph.D. | [Slides](https://drive.google.com/file/d/1WAUl4JVaakqCY8e7yZlQiz5j6NhMkHPb/view?usp=sharing) |
+
+## Call Calendar
+
+These meeting are recorded via audio and video. By participating you consent that these recordings may be made publicly available. Any presentation materials, proposals and meeting minutes are published on the respective project’s wiki page and are open to the public in accordance to OCP’s Bylaws and IP Policy. This can be found at <http://www.opencompute.org/about/ocp-policies/>. If you have any questions please contact OCP.
+
+## Presentations & Events
+
+- [**TAP Vision** | Slides](https://drive.google.com/file/d/1WAUl4JVaakqCY8e7yZlQiz5j6NhMkHPb/view?usp=sharing)
+- [**TAP Presentation** | Slides](https://drive.google.com/file/d/1LC5Ld0r3U7us_jvmKeD_ZpBJaA7Kk0O4/view?usp=sharing)
+
+### OCP Events
+
+- 2023 | OCP Global Summit | TAP Track
+- [2023 | OCP Regional Summit | TAP Track](TAP-2023-OCP-Regional-Summit)
+- [2022 | OCP Global Summit | TAP Track](TAP-2022-OCP-Global-Summit)
+- [2022 | OCP Tech Talks | TAP Track](TAP-2022-OCP-Tech-Week)
+- [2021 | OCP Global Summit | TAP Track](TAP-2021-OCP-Global-Summit)
+- [2020 | OCP Tech Week | TAP Track](TAP-2020-OCP-Tech-Week)
+
+### GTC
+
+- [**2021 GTC | Time Synchronization in Distributed Data Centers** | Direct Video](https://drive.google.com/file/d/1RRjmGcaerDcjSKHzjfs9ob0XoldP03uQ/view?usp=sharing) | [Webpage](https://www.nvidia.com/en-us/on-demand/session/gtcspring21-S31889/) | [Slides](https://drive.google.com/file/d/1H8Q4S7darJyz_LTtQq_MykvzfhD_w_6I/view?usp=sharing)
+- Impact of Oscillator Noise on PTP Time Error by SiTime | [Slides Part 1](https://drive.google.com/file/d/16EAy8Tl7SqosLlGSg5WKEA4nexWjUlAg/view?usp=sharing) | [Slides Part 2](https://drive.google.com/file/d/1Kc5JdHdd2nchxbXNGm2XyBj-pXUkHk9N/view?usp=sharing)
+
+## TAP Media References
+
+- [International Timing and Sync Forum 2022 interviewing Ahmad Byagowi](https://vimeo.com/785878343)
+- [“It’s About Time (PTP on the Raspberry Pi)”](https://www.youtube.com/watch?v=RvnG-ywF6_s) video from [Jeff Geerling Youtube Channel](https://www.youtube.com/channel/UCR-DXc1voovS8nhAvccRZhg) explains the effort on getting PTP on the Raspberry Pi
+- [“Why is this PCIe Card RADIOACTIVE?”](https://www.youtube.com/watch?v=JK3eTGkX6qY&t=286s) video from [Linus Tech Tips Youtube Channel](https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw) highlighting the TAP Time Card
+- [“The most accurate Raspberry Pi clock IN THE WORLD! Can it do PTP?”](https://www.youtube.com/watch?v=tU0xC1ynaT8) video from [Jeff Geerling Youtube Channel](https://www.youtube.com/channel/UCR-DXc1voovS8nhAvccRZhg) highlighting the TAP Time Card
+- [“Put An Atomic Clock in Your PC – Open Source Time Card”](https://www.youtube.com/watch?v=YKApDtJjXU4) video from [Gary Explains Youtube Channel](https://www.youtube.com/channel/UCRjSO-juFtngAeJGJRMdIZw) explains the TAP Time Card
+- [“Facebook shares its Time Card atomic clock tech to speed internet services”](https://www.cnet.com/tech/computing/facebook-shares-its-time-card-atomic-clock-tech-to-speed-internet-services/) article from C|Net
+- [“Supercharges Precision Timing for Facebook’s Next-Generation Time Keeping”](https://developer.nvidia.com/blog/nvidia-supercharges-precision-timing-for-facebooks-next-generation-time-keeping/) developer blog from NVIDIA
+
+### References & External Links
+
+- [**Spanner**, TrueTime & The CAP Theorem](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/45855.pdf) by Eric Brewer, Google
+- [**Sundial**: Fault-tolerant Clock Synchronization for Datacenters](https://www.usenix.org/conference/osdi20/presentation/li-yuliang) by Google Inc. and Harvard University
+- [Practical Uses of Synchronized Clocks in Distributed Systems](http://www.dainf.cefetpr.br/~tacla/SDII/PracticalUseOfClocks.pdf) by Barbara Liskov
+- [Stanford Paper](https://ocp-all.groups.io/g/OCP-TAP/attachment/2/0/nsdi18-geng.pdf)
+- [On Time Synchronization Issues in Time-Sensitive Networks with Regulators and Nonideal Clocks](https://arxiv.org/pdf/2002.04269.pdf)
+- [Accurate Network Clock Synchronization at Scale](https://drive.google.com/file/d/11MFIk9WWJ-cmjj8uWifKQnefEKvdchZE/view?usp=sharing)
+- [Exploiting a Natural Network Effect for Scalable, Fine-grained Clock Synchronization](https://drive.google.com/file/d/1dpuhsC3aPNpJHD-iw0xq4K0cDjEMGG4q/view?usp=sharing)
+- [SIMON: A Simple and Scalable Method for Sensing, Inference and Measurement in Data Center Networks](https://drive.google.com/file/d/1OSdZfRiGYKSntjhorKdPtoP1ewQ_yKVW/view?usp=sharing)
+- [New Guidelines for Inclusiveness](https://www.opencompute.org/blog/open-compute-project-foundation-issues-new-guidelines-for-inclusiveness)
+
+- February 11, 2026 ([YouTube](https://www.youtube.com/watch?v=-tIQy2ciCI0))
+- April 22, 2026 ([YouTube](https://www.youtube.com/watch?v=EumMGaeGUX4))
+- February 25, 2026 ([YouTube](https://www.youtube.com/watch?v=LBsyuhcEsJo))
+- November 19, 2025 ([YouTube](https://www.youtube.com/watch?v=kqNBGf3xo3I))
+- May 06, 2026 ([YouTube](https://www.youtube.com/watch?v=OknwjG25qnY))
+- December 31, 2025 ([YouTube](https://www.youtube.com/watch?v=wI-fGoZBiOI))
+- May 20, 2026 ([YouTube](https://www.youtube.com/watch?v=_SQvBytX5jg))
+- June 17, 2026 ([YouTube](https://www.youtube.com/watch?v=7ogOud7Msiw))

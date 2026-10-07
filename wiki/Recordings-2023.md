@@ -1,34 +1,3 @@
-[All recordings](Recordings) · [Meeting information](Meetings)
+This content is now on the single [Time Appliances Project page](Home#recordings-from-past-calls).
 
-## 2023 project calls
-
-| Index | Date | Topics | Speakers | Slides |
-| --- | --- | --- | --- | --- |
-| #90 | Dec-20, 2023 | [Atomic Clocks – Quantum theory in action for 80 years and counting](https://www.youtube.com/watch?v=tpKjjSQ6yuA) | David Chandler | [Slides](https://drive.google.com/file/d/1toyLLtwsKgTuVTfydHN6WVdl_L9K3Ic7/view?usp=sharing) |
-| #89 | Dec-06, 2023 | [5G PNT Using TV Transmitters](https://www.youtube.com/watch?v=Rp0heFYIzq0) | Stefan Maier | [Slides](https://drive.google.com/file/d/1_xuypHoWuIwGeze2a-fSZrpCwFGh_1hA/view?usp=drive_link) |
-| #88 | Nov-22, 2023 | [Avnu Alliance: TSN Testing & Certification programs](https://www.youtube.com/watch?v=2pCmmla50GE) | Dave Cavalcanti & Genio Kronauer | [Slides](https://drive.google.com/file/d/1PJOw1bpWK9vZ5RqJ9Tt3dEU6umRUv7kr/view?usp=drive_link) |
-| #87 | Nov-08, 2023 | [Pendulum: Sync your clocks with memory-safe NTP and PTP](https://www.youtube.com/watch?v=3dLXbOjCkns) | David Venhoek | [Slides](https://drive.google.com/file/d/1X2GUlF2qQBCjKnpFTr0D5u44oxG6FrpA/view?usp=sharing) |
-| #86 | Oct-25, 2023 | [Anomaly Detection in Raw GNSS Data](https://www.youtube.com/watch?v=OBtxwtkcMN8) | Maksim Barodzka | [Slides](https://drive.google.com/file/d/1eIucIUHD9SJBMCE8lp8ki2ebrVRZCKKf/view?usp=drive_link) |
-| #85 | Oct-11, 2023 | [ÜberNIC: an Ethernet Adapter with CXL and PTM Support](https://www.youtube.com/watch?v=ZqS5FCu-c-w) | Seth Friedman | [Slides](https://drive.google.com/file/d/1Y7OoA4xQqerFP_NK3iVxv3Z3T6jm__Sl/view?usp=sharing) |
-| #84 | Sep-27, 2023 | [Resilient Time Systems](https://www.youtube.com/watch?v=Z5Qo5o3cydI) | Robert Lindauer | [Slides](https://drive.google.com/file/d/1w-CB2bqPBBM5u7He-0ci5KRP9XQDfZHi/view?usp=sharing) |
-| #83 | Sep-13, 2023 | [Time in TigerBeetle](https://www.youtube.com/watch?v=TMHuTHoH4z4) | Joran Dirk Greef | [Slides](https://drive.google.com/file/d/1-c9yAW3iFkCRzuD1NU9kP47Jy_ER_zZN/view?usp=sharing) |
-| #82 | Sep-06, 2023 | [Precision Frequency Measurement over PCIe](https://www.youtube.com/watch?v=UCGDe95qW8c) | Julian St. James | [Slides](https://docs.google.com/presentation/d/1qTW_YAglMlAnUvz76P0BZidEhEjmL-5v/edit?usp=sharing&ouid=104727018165459345315&rtpof=true&sd=true) |
-| #81 | Aug-30, 2023 | [Using Satelles LEO PNT to sync OCP-TAP applications](https://www.youtube.com/watch?v=voCbHs6OrHw) | Charlie Meyer | [Slides](https://drive.google.com/file/d/1Gg500QMU07DZsGzbFuZCI8_86pgqiQca/view?usp=sharing) |
-| #80 | Aug-23, 2023 | [Precision Time in the Last Centimeters with PCIe PTM: A Deeper Dive](https://www.youtube.com/watch?v=JOucm1vjk8o) | Kevin Stanton, Ph.D. | [Slides](https://docs.google.com/presentation/d/1e0Ls-H9d8yR4pjitUA0gvdg7iETZVhNe/edit?usp=sharing&ouid=104727018165459345315&rtpof=true&sd=true) |
-| #79 | Aug-16, 2023 | [PTP Track Hound v2 – Central Monitoring Hub for Timing-Critical Infrastructure](https://www.youtube.com/watch?v=WQ7Fw_7Bhq4) | Thomas Behn | [Slides](https://drive.google.com/file/d/18KaVi2oLI3tRtlPRv6xERaBBFKbzPVNw/view?usp=sharing) |
-| #78 | Aug-02, 2023 | [Digital Time Services](https://www.youtube.com/watch?v=uH2BekT86x4) | Judah Levine, Ph.D. | [Slides](https://drive.google.com/file/d/1Xt7o4DZ8sAp8UGrd6hULQKxliUXmqEiT/view?usp=sharing) |
-| #77 | Jul-19, 2023 | [Quantum Time Transfer](https://www.youtube.com/watch?v=g5MopRhq0KE) | David Mitlyng | [Slides](https://drive.google.com/file/d/1Z9ma59EhhJ9aQpl8slKmCRFesHj78iVn/view?usp=sharing) |
-| #76 | Jul-05, 2023 | [Secure Timing Architecture for Untrusted Edge Systems](https://www.youtube.com/watch?v=54W5OYsEN70) | Fatima Anwar Ph.D. | [Slides](https://drive.google.com/file/d/1VBqPgoMPiuJbP3neGJ7G2xEy_hFhcRos/view?usp=drive_link) |
-| #75 | Jun-21, 2023 | [The Network is The Clock: adding resilience at the network layer with vPRTC](https://www.youtube.com/watch?v=lr7R3zTGyzw) | Christian Farrow | [Slides](https://drive.google.com/file/d/1k89IgcCAxQglaONoIRgjWAlOZFdpFL6-/view?usp=sharing) |
-| #74 | Jun-07, 2023 | [Brain’s clock and Time Dissemination in the Body](https://www.youtube.com/watch?v=sIW7ZP7lW5E) | Oliver Rawashdeh, Ph.D. | [Slides](https://drive.google.com/file/d/1GiTpmssbvEoFKDV8PUiwb6ngRByP9LZt/view?usp=sharing) |
-| #73 | May-24, 2023 | [Cultivating Trust In Time](https://www.youtube.com/watch?v=O98jBe51h3I) | Ya-Shian Li-Baboud | [Slides](https://drive.google.com/file/d/1Prf25gpgpOJAoPTeLuLGRlPDZHomE-th/view?usp=sharing) |
-| #72 | May-10, 2023 | [Jamming and Spoofing of GNSS Timing Devices](https://www.youtube.com/watch?v=NAZdqiJk5kA) | Thomas Rødningen | [Slides](https://drive.google.com/file/d/1Dxia0kTfSHPBxuw-FscyLWtW5l-nBGw9/view?usp=sharing) |
-| #71 | Apr-26, 2023 | [PTP-based fbclock vs. HLC](https://www.youtube.com/watch?v=K9RRRXdIkqI) | Lu Pan | [Slides](https://drive.google.com/file/d/1SV7Fvtdb9bau4s3Id4pqaNnJilWYIbxX/view?usp=sharing) |
-| #70 | Apr-12, 2023 | [PTM Round Table](https://www.youtube.com/watch?v=seyJWYAvi5M) | L. Johnsen, K. Stanton, W. Wasko, B. Wheeler | [Slides](https://drive.google.com/file/d/1FcZT31S3GGhB-fxqKQ-_apV2vz38vFW8/view?usp=share_link) |
-| #69 | Mar-29, 2023 | [COTS based Jitterbug Timing Measurement System](https://www.youtube.com/watch?v=cBUBKpG4gH0) | Myrick Wilbur, Ph.D. | [Slides](https://drive.google.com/file/d/1g9mI16YDC-ow8iHmxQcshURhTlWXvrcU/view?usp=sharing) |
-| #68 | Mar-15, 2023 | [Integrated acoustic resonators in commercial Fin-FET technology](https://www.youtube.com/watch?v=CVKsoN2SLO0) | Dana Weinstein, Ph.D. | [Slides](https://drive.google.com/file/d/1cvhG04kgPhoSMuDkPzkwB8o6lr3i07Bn/view?usp=share_link) |
-| #67 | Mar-01, 2023 | [Timing Resilience and Security at the Core of GNSS Technology](https://www.youtube.com/watch?v=Sbv-dMhyGbM) | Gustavo Lopez | [Slides](https://drive.google.com/file/d/1TKM1c1qNhhr-HZAAqUqnxOKD7EA9mIEZ/view?usp=sharing) |
-| #66 | Feb-15, 2023 | [Trading off Consistency and Availability in Cyber-Physical Systems](https://www.youtube.com/watch?v=zkYnXzKp1hI) | Edward A. Lee, Ph.D. | [Slides](https://drive.google.com/file/d/1vZ6XE6EtGG6bBenenfsHhCJae82MP6NF/view?usp=sharing) |
-| #65 | Feb-01, 2023 | [SyncESMC – an ITU-T G.781 Multi-Clock ESMC Implementation](https://www.youtube.com/watch?v=YIlpZELUHYc) | Vipin Sharma | [Slides](https://docs.google.com/presentation/d/17DaakAe6mvpIGzVCOMH31n1J9usw7JSb/edit?usp=sharing&ouid=104727018165459345315&rtpof=true&sd=true) |
-| #64 | Jan-18, 2023 | [Overview of Timestamping and Synchronization Infrastructure at the Deutsche Boerse](https://www.youtube.com/watch?v=s2Q3mllpx10) | Georg Sauthoff, Ph.D. | [Slides](https://drive.google.com/file/d/1MV1HdF1Wmkp0q_tli0U966SZP1H5lahR/view?usp=sharing) |
-| #63 | Jan-04, 2023 | [Time & Frequency Measurements with Picosecond Streaming Time-to-Digital Converters](https://www.youtube.com/watch?v=TawbFDHZjB4) | Helmut Fedder, Ph.D. | [Slides](https://drive.google.com/file/d/1W2w3_bueBM1nox2pU-3wEckSx5WW1N_9/view?usp=sharing) |
+Read and edit it there so the project information stays together.

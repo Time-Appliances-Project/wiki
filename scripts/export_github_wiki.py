@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """One-time conversion of the recovered MediaWiki sources to GitHub Wiki Markdown.
 
+Historical migration tool: produces the original split-page snapshot, not the
+current single-page layout. Do not use it to replace the maintained live wiki.
 Requires the local recovery instance at localhost:8088 and markdownify/requests.
 Does not publish or overwrite the live GitHub Wiki.
 """
@@ -179,6 +181,8 @@ def main():
 
     soup = BeautifulSoup(rendered['Time Appliances Project'], 'html.parser')
     root = soup.select_one('.mw-parser-output')
+    for comment in root.find_all(string=lambda text: isinstance(text, Comment)):
+        comment.extract()
     groups = {}
     destination = 'Project-overview'
     for element in list(root.children):

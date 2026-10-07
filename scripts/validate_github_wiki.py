@@ -15,11 +15,13 @@ for name, path in pages.items():
         url = urlparse(target)
         if not url.scheme and url.path:
             assert unquote(url.path) in pages, (name, target)
-    if name.startswith('Recordings-'):
-        rows = [line for line in text.splitlines() if re.match(r'^\| #\d+', line)]
+    assert 'NewPP limit report' not in text, path
+    if name == 'Home':
+        past = text.split('### Recordings from Past Calls\n', 1)[1].split('\n## ', 1)[0]
+        rows = [line for line in past.splitlines() if re.match(r'^\| #\d+', line)]
         for row in rows:
             assert len(re.split(r'(?<!\\)\|', row)) == 7, (name, row)
-        numbers += [int(n) for n in re.findall(r'^\| #(\d+)', text, re.M)]
+        numbers += [int(n) for n in re.findall(r'^\| #(\d+)', past, re.M)]
 assert sorted(numbers) == list(range(1, 169)), 'Recording rows missing or duplicated'
 for name in ('Wireless-TimeSync', 'PTM-Readiness', 'Lunar-Timekeeping-System', 'TAP-2023-OCP-Regional-Summit'):
     assert 'original source has not yet been recovered' in pages[name].read_text()

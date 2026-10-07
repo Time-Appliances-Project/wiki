@@ -22,7 +22,7 @@ They are marked as incomplete. Saved page copies or MediaWiki exports can be sup
 
 ## Changes during migration
 
-Recovered content was converted to Markdown, internal links were updated, merged table cells were expanded, and punctuation was normalized. The long main page was divided into topic pages and recordings by year for easier editing. The missing speaker cell for call 19 was left blank so its slides remain in the correct column.
+Recovered content was converted to Markdown, internal links were updated, merged table cells were expanded, and punctuation was normalized. The original single-page structure is restored, including the contents list, workstreams, documents, meetings, and complete past-call table. Former topic and year URLs link to sections on the main page. The missing speaker cell for call 19 was left blank so its slides remain in the correct column.
 
 Revisions after February 2023 were not recovered. Current OCP pages supply recent content, not the intervening revision history. Historical workstream pages may contain old contact information and numbering. Meeting schedules and future-call labels reflect the source snapshot and should be maintained by contributors.
 
