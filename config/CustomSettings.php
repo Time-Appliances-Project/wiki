@@ -10,6 +10,9 @@ $wgVectorDefaultSkinVersionForExistingAccounts = '1';
 $wgVectorDefaultSkinVersionForNewAccounts = '1';
 $wgLogo = "$wgScriptPath/images/tap-logo.png";
 $wgLogos = [ '1x' => $wgLogo, 'icon' => $wgLogo ];
+$wgHooks['BeforePageDisplay'][] = static function ( $out, $skin ) {
+    $out->addInlineStyle('.mw-wiki-logo { background-size: 135px auto; }');
+};
 $wgEnableEmail = false;
 $wgEnableUserEmail = false;
 $wgEnableUploads = true;
