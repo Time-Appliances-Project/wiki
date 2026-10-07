@@ -37,13 +37,14 @@ This **main repository** stores the recovery snapshot and the recovery materials
 
 The 847 recovered revisions are archived MediaWiki history, not entries in GitHub's page history. Later original revisions were not recovered. Linked videos, slides, specifications, and repositories remain external links.
 
-The `wiki/` snapshot does **not** automatically track subsequent browser edits. Edit the live Wiki for ordinary maintenance. Do not push the recovery snapshot over newer wiki changes. No scheduled synchronization or automation overwrites the live Wiki.
+The `wiki/` snapshot does **not** automatically track subsequent browser edits. Edit the live Wiki for ordinary maintenance. Do not push the recovery snapshot over newer wiki changes. The **Publish wiki sections** workflow copies the live `Upcoming-Calls` and `Recordings-from-Past-Calls` tables into their marked regions on the live Home page after browser edits. It preserves all other Home content and never publishes the recovery snapshot. Section edit links open only the relevant table; publication normally takes about a minute. Git-based edits require running this workflow manually. No scheduled synchronization runs.
 
 ## Validate the migration
 
 ```sh
 python3 scripts/validate_recovery.py
 python3 scripts/validate_github_wiki.py
+python3 scripts/test_wiki_sections.py
 ```
 
 These checks verify archive checksums, recording coverage, image preservation, internal page targets, and marked recovery gaps. `scripts/export_github_wiki.py` is the historical conversion tool for the original split-page migration, requires `markdownify` and `requests`, and uses a local recovery instance to render MediaWiki source. It does not publish to GitHub and must not be used to replace the current single-page layout.

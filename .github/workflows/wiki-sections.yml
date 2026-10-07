@@ -1,0 +1,45 @@
+name: Publish wiki sections
+on:
+  gollum:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: wiki-sections
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository }}.wiki
+          ref: master
+          path: live-wiki
+      - name: Update only the call sections on the latest Home page
+        shell: bash
+        run: |
+          set -euo pipefail
+          git -C live-wiki config user.name 'TAP Wiki'
+          git -C live-wiki config user.email 'wiki@timeappliances.com'
+          for attempt in 1 2 3; do
+            # This checkout is disposable. Rebuild from the newest wiki revision
+            # on every retry so concurrent browser edits are never overwritten.
+            git -C live-wiki fetch origin master
+            git -C live-wiki reset --hard origin/master
+            python3 scripts/sync_wiki_sections.py live-wiki
+            git -C live-wiki add -- Home.md
+            if git -C live-wiki diff --cached --quiet; then
+              exit 0
+            fi
+            git -C live-wiki commit -m 'Update main page from editable call sections'
+            if git -C live-wiki push origin HEAD:master; then
+              exit 0
+            fi
+          done
+          echo 'Wiki changed during publication; rerun this workflow.' >&2
+          exit 1

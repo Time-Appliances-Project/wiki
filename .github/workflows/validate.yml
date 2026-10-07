@@ -13,3 +13,5 @@ jobs:
         run: python3 scripts/validate_recovery.py
       - name: Check GitHub Wiki links and recordings
         run: python3 scripts/validate_github_wiki.py
+      - name: Check section publication preserves other content
+        run: python3 scripts/test_wiki_sections.py
