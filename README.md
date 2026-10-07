@@ -1,65 +1,57 @@
 # Time Appliances Project wiki
 
-Recovered, editable TAP documentation with its original MediaWiki history.
+**[Open the TAP wiki](https://github.com/Time-Appliances-Project/wiki/wiki)**
 
-The restoration includes 12 original pages and 847 historical revisions through February 2023, plus current TAP content recovered on 7 October 2026. The main page includes all 168 past-call entries and 14 workstreams. Four missing source pages are clearly identified. See [recovery coverage](migration/README.md).
+The TAP community wiki is hosted and edited directly on GitHub. No server, Docker, Cloudflare account, or deployment is needed for normal use.
 
-## Run MediaWiki
+## Read and edit
 
-Requires Docker with Docker Compose and Python 3 for credential generation.
+- [Project overview](https://github.com/Time-Appliances-Project/wiki/wiki/Project-overview)
+- [Workstreams](https://github.com/Time-Appliances-Project/wiki/wiki/Workstreams)
+- [Meetings](https://github.com/Time-Appliances-Project/wiki/wiki/Meetings)
+- [Recordings](https://github.com/Time-Appliances-Project/wiki/wiki/Recordings)
+- [Documents](https://github.com/Time-Appliances-Project/wiki/wiki/Documents)
+- [How to edit](https://github.com/Time-Appliances-Project/wiki/wiki/Editing)
 
-```sh
-git clone https://github.com/Time-Appliances-Project/wiki.git
-cd wiki
-python3 scripts/configure.py
-docker compose up -d --build
-```
+Sign in to GitHub, open a wiki page, click **Edit**, make the change, preview it, and click **Save page**. Repository collaborators with write access can edit and create pages. Reading is public. GitHub keeps the history of edits made since this migration.
 
-Open <http://localhost:8088>. Initial startup creates the database and imports the recovered history and current pages. It may take a few minutes. Check progress with `docker compose logs -f wiki`.
+The long original TAP page is organized into topic pages and recordings by year. The restored recording archive includes all 168 past-call entries listed by OCP on 7 October 2026. Four pages with missing source material are explicitly marked. See [restoration notes](https://github.com/Time-Appliances-Project/wiki/wiki/Restoration-notes).
 
-Log in as `TapAdmin` with the `MW_ADMIN_PASSWORD` stored in your local `.env`. This file is private and excluded from Git. Use **Edit** or **Edit source** on a page, or the edit link beside a section. Administrators can create contributor accounts at **Special:CreateAccount**. Reading is public; editing is restricted to accounts created by an administrator. Email delivery is not configured.
+## Live wiki and recovery repository
 
-Edits live in the database and survive container restarts. The repository is the recovery and deployment package, not a live copy of database edits. Startup imports content only once and does not overwrite later edits.
-
-To stop the wiki, use `docker compose stop`. Start it again with `docker compose up -d`. Do not use `docker compose down -v` unless you intend to erase its database and uploaded files.
-
-## Public hosting
-
-GitHub stores this repository. MediaWiki itself needs a running PHP application and a persistent database. GitHub Pages cannot run it. This package uses MediaWiki 1.43.11 LTS, the classic Vector interface, the bundled visual editor, and MariaDB 10.11.
-
-The simplest public deployment is to run this same package on an always-on machine and connect it to a hostname through Cloudflare Tunnel:
-
-1. Run the wiki and verify local access.
-2. In Cloudflare, create a tunnel and install its connector on that machine.
-3. Add a published application route, such as `wiki.example.org`, with service `http://localhost:8088` when the connector runs on the host.
-4. Set `MW_SERVER=https://wiki.example.org` in `.env`, then run `docker compose up -d`.
-5. Open the public URL and verify login and editing. Avoid cache rules that cache HTML, login, or API responses.
-
-If the connector runs in a separate container, `localhost` refers to that container. Join it to the wiki's Docker network and use `http://wiki:80` instead. Keep tunnel credentials outside Git. The wiki becomes unavailable whenever its host or connector stops.
-
-See [Cloudflare Tunnel setup](https://developers.cloudflare.com/tunnel/get-started/) and [MediaWiki maintenance](https://www.mediawiki.org/wiki/Manual:Maintaining_a_MediaWiki_installation).
-
-## Backups and updates
+The **live wiki** is a separate Git repository. Browser edits are saved there immediately. Clone or pull it to back up the current pages and their history:
 
 ```sh
-python3 scripts/backup.py
+git clone https://github.com/Time-Appliances-Project/wiki.wiki.git
 ```
 
-The backup script briefly stops the wiki, saves its database, configuration, uploads, and `.env`, then restarts it. Backups are placed in `backups/`, which is excluded from Git. They contain credentials and must be stored privately. Copy completed backups to a different machine or private storage. See [restore instructions](docs/restore.md).
+This **main repository** stores the initial migration snapshot and the recovery materials:
 
-Before upgrading MediaWiki, create a backup. Update its version in `Dockerfile`, rebuild, and run `docker compose exec wiki php maintenance/run.php update --quick`. Review MediaWiki's release notes and supported versions before upgrading. No scheduled upgrades or backups are enabled automatically.
+| Location | Purpose |
+| --- | --- |
+| `wiki/` | Initial GitHub Wiki Markdown and image snapshot |
+| `content/` | Prepared MediaWiki source for the recovered pages |
+| `migration/original-history.xml.gz` | Unchanged original export with 12 pages and 847 historical revisions |
+| `migration/snapshots/` | Current OCP pages used during recovery |
+| `migration/*-manifest.json` | Source coverage and checksums |
 
-## Recovery files
+The 847 recovered revisions are archived MediaWiki history, not entries in GitHub's page history. Later original revisions were not recovered. Linked videos, slides, specifications, and repositories remain external links.
 
-- `content/`: prepared MediaWiki source, one file per page.
-- `migration/original-history.xml.gz`: original historical export, unchanged.
-- `migration/seed.xml`: current content for the initial import.
-- `migration/uploads/`: recovered images.
-- `migration/*-manifest.json`: sources, coverage, and checksums.
-- `scripts/validate_recovery.py`: offline archive and meeting-coverage checks.
+The `wiki/` snapshot does **not** automatically track subsequent browser edits. Edit the live Wiki for ordinary maintenance. Do not push the initial snapshot over newer wiki changes. No scheduled synchronization or automation overwrites the live Wiki.
 
-Run `python3 scripts/validate_recovery.py` to verify the recovery package. `scripts/recover.py` re-fetches the surviving staging export; it is not needed to run the wiki. `scripts/build_content.py` was used for the one-time conversion, requires Beautiful Soup 4, and reads the saved snapshots. Rebuilding these initial pages does not publish edits to a running wiki.
+## Validate the migration
+
+```sh
+python3 scripts/validate_recovery.py
+python3 scripts/validate_github_wiki.py
+```
+
+These checks verify archive checksums, recording coverage, image preservation, internal page targets, and marked recovery gaps. `scripts/export_github_wiki.py` is a one-time conversion tool, requires `markdownify` and `requests`, and uses a local recovery instance to render MediaWiki source. It does not publish to GitHub.
+
+## Optional MediaWiki copy
+
+The original MediaWiki deployment files remain available for archival portability. See [optional MediaWiki deployment](docs/mediawiki.md) if you want to run that separate copy. They are not required for the GitHub Wiki.
 
 ## Attribution
 
-Recovered OCP wiki content is attributed to the Open Compute Project Foundation and its contributors under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), as stated on the original wiki Main Page. Imported history preserves contributor attribution, with an `ocp` prefix distinguishing historical identities from local accounts. See [source details and licensing](migration/README.md). Linked documents, software, and logos retain their respective terms.
+Recovered OCP wiki content is attributed to the Open Compute Project Foundation and its contributors under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), as stated on the original wiki Main Page. Contributor names, timestamps, and summaries remain in the original export. Formatting and internal links have been adapted for GitHub Wiki. Linked specifications, presentations, software, and logos retain their respective terms. See [recovery sources](migration/README.md).

@@ -11,3 +11,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Check archive integrity and complete meeting coverage
         run: python3 scripts/validate_recovery.py
+      - name: Check GitHub Wiki links and recordings
+        run: python3 scripts/validate_github_wiki.py
