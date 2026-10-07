@@ -124,6 +124,8 @@ Dial in
 
 <!-- BEGIN SECTION: upcoming-calls -->
 
+<!-- Save this section to update Upcoming Calls on the main page. -->
+
 |  | Date | Topics | Speakers |
 | --- | --- | --- | --- |
 | #169 | Oct-07, 2026 | Neo Clouds & AI Sovereignty: Deterministic Timing as the Foundation of Trusted Distributed Intelligence | Ankur Sharma, Ramki Ramakrishnan |
@@ -135,6 +137,8 @@ Dial in
 ### Recordings from Past Calls <sup>[edit](https://github.com/Time-Appliances-Project/wiki/wiki/Recordings-from-Past-Calls/_edit "Edit only Recordings from Past Calls")</sup>
 
 <!-- BEGIN SECTION: recordings-from-past-calls -->
+
+<!-- Save this section to update Recordings from Past Calls on the main page. -->
 
 | Index | Date | Topics | Speakers | Slides |
 | --- | --- | --- | --- | --- |
