@@ -7,13 +7,13 @@
 
 Changes to ordinary pages are live immediately. Use **Page History** to compare revisions and recover earlier text. You do not need Docker, a terminal, a separate wiki account, or a website deployment.
 
-## Edit the calls sections
+## Edit individual sections
 
-Click **edit** at the end of **Upcoming Calls** or **Recordings from Past Calls** on the [main page](Home). The editor contains only that section’s table. Preview your changes and click **Save page**. The section page saves immediately; the main page updates automatically after the publication workflow finishes, usually within a minute. Return to [Upcoming Calls](Home#upcoming-calls) or [Recordings from Past Calls](Home#recordings-from-past-calls) to see the result.
+Click **edit** at the end of **Workstreams**, **Upcoming Calls**, or **Recordings from Past Calls** on the [main page](Home). The editor contains only that section’s table. Preview your changes and click **Save page**. The section page saves immediately; the main page updates automatically after the publication workflow finishes, usually within a minute. Return to [Workstreams](Home#workstreams), [Upcoming Calls](Home#upcoming-calls) or [Recordings from Past Calls](Home#recordings-from-past-calls) to see the result.
 
-Keep these section page titles unchanged. Use their **edit** links for call tables; use the main page’s top **Edit** button for other sections. Content between the `BEGIN SECTION` and `END SECTION` comments on Home is maintained from these two section pages.
+Keep these section page titles unchanged. Use their **edit** links for these tables; use the main page’s top **Edit** button for other sections. Content between the `BEGIN SECTION` and `END SECTION` comments on Home is maintained from these three section pages.
 
-If the main page has not updated, check [Publish wiki sections](https://github.com/Time-Appliances-Project/wiki/actions/workflows/wiki-sections.yml). A maintainer can rerun a failed job or use **Run workflow** after editing the wiki through Git. To undo a call edit, restore the relevant section page through its history, then let it publish again.
+If the main page has not updated, check [Publish wiki sections](https://github.com/Time-Appliances-Project/wiki/actions/workflows/wiki-sections.yml). A maintainer can rerun a failed job or use **Run workflow** after editing the wiki through Git. To undo a section edit, restore the relevant section page through its history, then let it publish again.
 
 ## Add a project call
 

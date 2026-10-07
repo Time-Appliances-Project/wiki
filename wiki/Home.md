@@ -53,7 +53,11 @@ Datacenter applications are the primary target of time appliances project. In ad
 - ITU-T Liaison: [Silvana Rodrigues](mailto:Silvana.rodrigues@huawei.com) (Huawei)
 - ITU-T Liaison: [Stefano Ruffini](mailto:stefano.ruffini@calnexsol.com) (Calnex)
 
-## Workstreams
+<a name="workstreams"></a>
+
+## Workstreams <sup>[edit](https://github.com/Time-Appliances-Project/wiki/wiki/Workstreams/_edit "Edit only Workstreams")</sup>
+
+<!-- BEGIN SECTION: workstreams -->
 
 |  | Project | Objective | Lead | Mailing List | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -71,6 +75,8 @@ Datacenter applications are the primary target of time appliances project. In ad
 | [#12](Open-Time-Server-Cluster) | [Open Time Server Cluster (OTS-C)](Open-Time-Server-Cluster) | Specification for a cluster built on top of OTS | [Wil Myrick, Ph.D.](mailto:myrickwil@gmail.com) | [OTS-C](https://ocp-all.groups.io/g/ocp-tap-ots-c) | Work in progress |
 | [#13](Unified-Intelligent-Infrastructure) | [Unified Intelligent Infrastructure (UII)](Unified-Intelligent-Infrastructure) | Driving collaboration, innovation and coherence across hybrid multi-cloud infrastructure, AI systems,  distributed architectures, time-aware computing, and emerging domains such as quantum and beyond. | [Ankur Sharma](mailto:ankur.sharma@ocproject.net) | [UII](https://ocp-all.groups.io/g/ocp-tap-uii) | Work in progress |
 | [#14](Lunar-Timekeeping-System) | [Lunar Timekeeping System (LTS)](Lunar-Timekeeping-System) | Lunar Timekeeping,  distributed architectures, time-aware computing, and emerging domains such as quantum and beyond. | [Philip Linden](mailto:philiplinden@openlunar.org)   [Ashley Kosak](mailto:ashleykosak@openlunar.org) | [LTS](https://ocp-all.groups.io/g/ocp-tap-lts) | Initiated |
+
+<!-- END SECTION: workstreams -->
 
 ## OCP Marketplace
 

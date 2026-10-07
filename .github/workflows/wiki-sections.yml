@@ -20,7 +20,7 @@ jobs:
           repository: ${{ github.repository }}.wiki
           ref: master
           path: live-wiki
-      - name: Update only the call sections on the latest Home page
+      - name: Update only the editable sections on the latest Home page
         shell: bash
         run: |
           set -euo pipefail
@@ -36,7 +36,7 @@ jobs:
             if git -C live-wiki diff --cached --quiet; then
               exit 0
             fi
-            git -C live-wiki commit -m 'Update main page from editable call sections'
+            git -C live-wiki commit -m 'Update main page from editable sections'
             if git -C live-wiki push origin HEAD:master; then
               exit 0
             fi

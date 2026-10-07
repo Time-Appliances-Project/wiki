@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Publish editable call sections into the live wiki's continuous Home page.
+"""Publish editable sections into the live wiki's continuous Home page.
 
-Only the two explicitly marked regions are replaced. Always run against a fresh
+Only the explicitly marked regions are replaced. Always run against a fresh
 checkout of the live wiki, never the recovery snapshot when publishing.
 """
 import argparse
@@ -10,6 +10,7 @@ import os
 from pathlib import Path
 
 SECTIONS = {
+    'workstreams': 'Workstreams',
     'upcoming-calls': 'Upcoming-Calls',
     'recordings-from-past-calls': 'Recordings-from-Past-Calls',
 }
@@ -45,7 +46,7 @@ def main():
     parser.add_argument('wiki', type=Path)
     args = parser.parse_args()
     if not relevant_event():
-        print('No call-section source changed; leaving Home untouched.')
+        print('No editable-section source changed; leaving Home untouched.')
         return
     home_path = args.wiki / 'Home.md'
     home = home_path.read_text()
@@ -53,9 +54,9 @@ def main():
     updated = render(home, pages)
     if updated != home:
         home_path.write_text(updated)
-        print('Updated the call sections in Home; other content preserved.')
+        print('Updated the editable sections in Home; other content preserved.')
     else:
-        print('Home already matches both call sections.')
+        print('Home already matches all editable sections.')
 
 
 if __name__ == '__main__':
