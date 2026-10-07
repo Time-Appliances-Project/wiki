@@ -9,7 +9,7 @@ Changes are live immediately. Use **Page History** to compare revisions and reco
 
 ## Edit the calls sections
 
-The **edit** links before Upcoming Calls and Recordings from Past Calls open the GitHub editor for the entire main page. GitHub Wiki does not provide a separate section editor. Find the relevant heading in the editor, change the table below it, preview, and save.
+The **edit** links after Upcoming Calls and Recordings from Past Calls open the GitHub editor for the entire main page. GitHub Wiki does not provide a separate section editor. Find the relevant heading in the editor, change the table below it, preview, and save.
 
 ## Add a project call
 

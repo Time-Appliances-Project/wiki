@@ -17,7 +17,7 @@ for name, path in pages.items():
             assert unquote(url.path) in pages, (name, target)
     assert 'NewPP limit report' not in text, path
     if name == 'Home':
-        past = re.split(r'^### .*Recordings from Past Calls\n', text, maxsplit=1, flags=re.M)[1].split('\n## ', 1)[0]
+        past = re.split(r'^### Recordings from Past Calls[^\n]*\n', text, maxsplit=1, flags=re.M)[1].split('\n## ', 1)[0]
         rows = [line for line in past.splitlines() if re.match(r'^\| #\d+', line)]
         for row in rows:
             assert len(re.split(r'(?<!\\)\|', row)) == 7, (name, row)

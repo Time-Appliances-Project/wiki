@@ -120,7 +120,7 @@ Dial in
 
 <a name="upcoming-calls"></a>
 
-### [edit](https://github.com/Time-Appliances-Project/wiki/wiki/Home/_edit "Opens the whole-page editor; find Upcoming Calls") Upcoming Calls
+### Upcoming Calls <sup>[edit](https://github.com/Time-Appliances-Project/wiki/wiki/Home/_edit "Opens the whole-page editor; find Upcoming Calls")</sup>
 
 |  | Date | Topics | Speakers |
 | --- | --- | --- | --- |
@@ -128,7 +128,7 @@ Dial in
 
 <a name="recordings-from-past-calls"></a>
 
-### [edit](https://github.com/Time-Appliances-Project/wiki/wiki/Home/_edit "Opens the whole-page editor; find Recordings from Past Calls") Recordings from Past Calls
+### Recordings from Past Calls <sup>[edit](https://github.com/Time-Appliances-Project/wiki/wiki/Home/_edit "Opens the whole-page editor; find Recordings from Past Calls")</sup>
 
 | Index | Date | Topics | Speakers | Slides |
 | --- | --- | --- | --- | --- |
