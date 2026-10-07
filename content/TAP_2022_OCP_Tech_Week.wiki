@@ -1,0 +1,52 @@
+''Recovered from the OCP wiki snapshot dated 2022-06-15. See [[TAP:Restoration notes]] for coverage.''
+
+= Time Appliances Project =
+
+[https://www.opencompute.org/events/past-events/ocp-tech-talk-series-time-appliances-project-tap OCP Tech Talks | TAP | June 2, 2022]
+<BR>
+[[File:OCP-TAP-Tech-Talk-2022-Banner.png|upright=50]]
+==TAP Sessions==
+
+{| class="wikitable sortable"
+! # !! Session !! By !! Slides
+|-
+| 1
+| [https://www.youtube.com/watch?v=a_jhJiUzTLk&t=16s Opening, TAP Vision and Updates]
+| OCP Team: Ahmad, Gary, Ioannis, Mike, Elad
+| [https://drive.google.com/file/d/1J2AT4LD7u2RxA6BzCQ0OkABZD3P6PRXj/view?usp=sharing Slides]
+|-
+| 2
+| [https://www.youtube.com/watch?v=a_jhJiUzTLk&t=1665s Time Sync everywhere: Wi-Fi and compute platform]
+| Kevin Stanton, Intel
+| [https://drive.google.com/file/d/1BuEMt1R8PFhN8r5UX5bWjPGGc6viE2su/view?usp=sharing Slides]
+|-
+| 3
+| [https://www.youtube.com/watch?v=a_jhJiUzTLk&t=2560s Time Sync in DCs: What's Next?]
+| Dotan Levi, NVIDIA
+| [https://drive.google.com/file/d/1aoGS944E-U43LWsHnkXqvWRO95JtrmYX/view?usp=sharing Slides]
+|-
+| 4
+| [https://www.youtube.com/watch?v=a_jhJiUzTLk&t=4124s Time Drive M.2]
+| Julian St. James, Meta
+| [https://drive.google.com/file/d/1GQ3tu62zGAj2hZCXySXy8zPn-HBuEkSF/view?usp=sharing Slides]
+|-
+| 5
+| [https://www.youtube.com/watch?v=a_jhJiUzTLk&t=5109s TAP Instrumentation & Management]
+| Anand Ram, Calnex
+| [https://drive.google.com/file/d/1l6h-fY0tgJpfERoRXR4GseaiOSrk6cnd/view?usp=sharing Slides]
+|-
+| 6
+| [https://www.youtube.com/watch?v=a_jhJiUzTLk&t=5875s Time-as-a-Service]
+| Lasse Johnsen, Timebeat
+| [https://drive.google.com/file/d/12iaaNg5tVRO5iVnEnPetWJBDZ2oN2cfE/view?usp=sharing Slides]
+|-
+| 7
+| [https://www.youtube.com/watch?v=a_jhJiUzTLk&t=7220s GNSS Receiver]
+| Dhiman Chowdhury, Trimble
+| [https://drive.google.com/file/d/1V41hfqxdGHsKE3dgVQjefO_Mxd8RLiJQ/view?usp=sharing Slides]
+|-
+| 8
+| [https://www.youtube.com/watch?v=a_jhJiUzTLk&t=8936s Choices for 5G data center synchronization]
+| Ullas Kumar, Rakon
+| [https://drive.google.com/file/d/1oYegbsF5PGcH36p68WUEUAyVns7XXWET/view?usp=sharing Slides]
+|}

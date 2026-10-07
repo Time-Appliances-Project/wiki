@@ -1,0 +1,26 @@
+[[Time Appliances Project|Back to TAP]]
+
+'''Workstream Leads:''' [mailto:byagowi@turba.ai Ahmad Byagowi], [mailto:wilbur.myrick@ensco.com Wil Myrick]
+
+Open Time Server Cluster (OTS-C) is a Workstream under the OCP Time Appliances Project.
+
+The Time Appliances Project (TAP) addresses time synchronization, a key element of efficiency in distributed systems, and provides a platform to bring together, discuss, standardize, and share timing technologies, with datacenter applications and network infrastructure as its main interest.
+
+The OTS-C Specification is a timing reference architecture that builds on the open, scalable, and validated reference architecture of Open Time Servers (OTS) with respect to cluster configurations. It is built on a PTP network configuration that integrates with open time server deployments for data centers and edge environments, and expands the Data Center PTP Profile to incorporate clusters of PTP Grandmasters that provide timing resiliency to time-sensitive data center applications.
+
+The architecture allows open-source timekeeping hardware such as the Time Card ,  a customized Open Timing Module (OTM) for the OTS ,  and newly developed hardware such as the TimeHAT (a customized OTM for the Raspberry Pi 5) to be integrated into a cluster of PTP Grandmasters. Using OTM terminology accommodates other OTS configurations that do not incorporate the Time Card.
+
+Learn more
+
+The workstream’s reference architecture, leadership, and materials are maintained on the OCP wiki.
+
+[[Open Time Server Cluster|Open Time Server Cluster Wiki]]
+
+== Scope ==
+
+The OTS-C reference architecture covers:
+
+'''Cluster reference architecture''' ,  a timing reference architecture that extends the Open Time Server (OTS) reference architecture to cluster configurations
+'''PTP Grandmaster clusters''' ,  expanding the Data Center PTP Profile to clusters of PTP Grandmasters that provide timing resiliency to time-sensitive applications
+'''Open timing hardware integration''' ,  integrating Open Timing Modules such as the Time Card and the TimeHAT into a cluster of PTP Grandmasters
+'''Data center and edge deployments''' ,  a PTP network configuration that integrates with open time server deployments in data centers and edge environments

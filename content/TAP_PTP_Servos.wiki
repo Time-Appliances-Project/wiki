@@ -1,0 +1,79 @@
+''Recovered from the OCP wiki snapshot dated 2022-11-05. See [[TAP:Restoration notes]] for coverage.''
+
+[[File:Screenshot_2020-07-01_16.35.12.png|right]]
+==PTP Servos- Workstream #5==
+[[Time Appliance Project|Time Appliances Project]]
+
+==Objectives==
+* Document requirements & use-cases
+** Both application-driven (i.e. max|TE| < X) and developer-driven (i.e. APIs, debuggability/observability)
+** Liaise with other workstreams including oscillator workstream
+** Liaise with relevant industry & standards groups (i.e. ITU-T, IEEE 1588, etc.) as needed to identify generic requirements
+** Cover controlling and monitoring requirements
+* Investigate current public open-source solutions
+** Functionality provided, algorithms used, pros, cons
+** Documentation
+* Define servo parameterization requirements
+** Including holdover characteristics
+* Investigate & characterize algorithms
+** Define use-cases that should be simulated/characterized
+* Define / expand API requirements & APIs
+* Open-source solutions
+** Modify, develop, and/or sponsor
+** Contributing to HW or SW open-source including TimeCard FPGA
+
+==Project Team==
+:- Lead: [mailto:alon.regev@keysight.com Alon Regev] (Keysight)
+
+----
+==Documents==
+[https://drive.google.com/drive/folders/1Uw0Vmqr1EZrdx_sb6m-LdgAsPXEhtvzv Google Drive Repository]
+
+==Regular Project Calls==
+'''- Next meeting is on November 28, 2022'''
+
+- Occurs Mondays from 10:00 AM to 11:00 AM Pacific Time
+ [https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZGY2MWM0ZmQtOWIwNS00NzlkLTk4YzktY2FhOTE2N2VkZDBj%40thread.v2/0?context=%7b%22Tid%22%3a%2263545f27-3232-4d74-a44d-cdd457063402%22%2c%22Oid%22%3a%220726d84b-4ea4-43b6-b5a1-0c77ae495c8c%22%7d click here to join the meeting]
+ Or call in (audio only)
+ +1 707-596-6527,,88796120#
+ Phone Conference ID: 887 961 20#
+
+==Recording from Past Calls==
+{| class="wikitable"
+|-
+|Date
+|Recording
+|Presentation
+|-
+| March 24, 2022
+| [https://drive.google.com/file/d/1h6xSQZ-65w_esR-z0Nmo4uq0bvPgu7O4/view?usp=sharing 2022Mar24 Recording]
+| [https://docs.google.com/presentation/d/1_--xF4n8DjpXjNKgUKJifG6Wy_5lsPDh/edit?usp=sharing&ouid=111731438537900546699&rtpof=true&sd=true 2022Mar24 Presentation]
+|-
+| March 31, 2022
+| [https://drive.google.com/file/d/1vv_5qR6j9I_QC1WEsbJvK1DQJEhjQDHA/view?usp=sharing 2022Mar31 Recording]
+| [https://docs.google.com/presentation/d/1vXUBQXEpDKNHvpbHvppxxPOn-iPwTjAh/edit?usp=sharing&ouid=111731438537900546699&rtpof=true&sd=true 2022Mar31 Presentation]
+|-
+| April 14, 2022
+| [https://drive.google.com/file/d/1FOkCh5mQiH8mzngkFAJ_QLcE8ITBGjcN/view?usp=sharing 2022Apr14 Recording]
+| [https://docs.google.com/presentation/d/1nNA1u3tq-fU2LgoYhXKIT-__IH-DGsOe/edit?usp=sharing&ouid=111731438537900546699&rtpof=true&sd=true 2022Apr14 Presentation]
+|-
+| June 6, 2022
+|
+| [https://docs.google.com/presentation/d/1PX4J7Bc_gvfKKaRD7gPXkCSAYbwxES3Q/edit?usp=sharing&ouid=111731438537900546699&rtpof=true&sd=true 2022Jun06 Presentation]
+|-
+| June 13, 2022
+|
+| [https://docs.google.com/presentation/d/1-DriWpvV3kDkHgPPwrfCVVBQYGiL3_Rd/edit?usp=sharing&ouid=111731438537900546699&rtpof=true&sd=true 2022Jun13 Presentation]
+|-
+| June 27, 2022
+|
+| [https://docs.google.com/presentation/d/1BBGKlzAI6N6UT9SrY8ZlNQsL2bWv7KYY/edit?usp=sharing&ouid=111731438537900546699&rtpof=true&sd=true 2022Jun27 Presentation]
+|-
+| August 22, 2022
+|
+| [https://docs.google.com/presentation/d/16FoPF23R3NFPY91tGbPSc_4pfCfHl1DK/edit?usp=sharing&ouid=111731438537900546699&rtpof=true&sd=true 2022Aug22 Presentation]
+|-
+| August 29, 2022
+|
+| [https://docs.google.com/presentation/d/1PYoPvbBq0uBQuyRPjbwUiX7OPIQrBFpB/edit?usp=sharing&ouid=111731438537900546699&rtpof=true&sd=true 2022Aug29 Presentation]
+|}

@@ -1,0 +1,11 @@
+*
+!Dockerfile
+!config/
+!config/**
+!scripts/
+!scripts/container-start.sh
+!migration/
+!migration/original-history.xml.gz
+!migration/seed.xml
+!migration/uploads/
+!migration/uploads/**

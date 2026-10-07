@@ -1,0 +1,6 @@
+.env
+.runtime/
+backups/
+migration/source/
+__pycache__/
+.DS_Store

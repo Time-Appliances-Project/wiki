@@ -1,0 +1,13 @@
+name: Validate recovery archive
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check archive integrity and complete meeting coverage
+        run: python3 scripts/validate_recovery.py

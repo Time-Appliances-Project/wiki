@@ -1,0 +1,269 @@
+[[Time Appliances Project|Back to TAP]]
+
+== Time Synchronization Industry-Academia workstream (TSIAW) – Workstream #10 ==
+
+[[Time Appliance Project|Back to Time Appliances Project’s wiki]]
+
+== Goal ==
+
+The Time Synchronization Industry-Academia Workstream (TSIAW) brings together researchers and industry practitioners to discuss and solve challenging problems in time synchronization of connected devices and applications.
+
+== Objectives ==
+
+=== Bridge the gap between theory and practice ===
+
+The TSIAW will act as a bridge between academic research and industry needs. By bringing together researchers and practitioners, the workstream will ensure that research efforts address real-world challenges faced by the ever-growing and complex data center and edge communication networks and devices by developing robust, reliable and scalable novel solutions
+
+=== Synchronization Data for Decision Makers ===
+
+Research and develop the data required by data center decision makers, on how to use precise time to make data center and edge applications (AI, Databases, Microservices, etc.) or portions of that software run 2x to 1000+x better in performance, power, latency and/or cost when compared to unsynchronized solution.
+
+=== Develop Time Synchronization Projects ===
+
+The TSIAW will expose projects for academia that will have impact on data center and edge technologies.  When possible, TSIAW will help facilitating the research.  When possible, making a community of time synchronization experts available to Academia and Industry to improve applications through time synchronization.
+
+=== Advance the field of time synchronization ===
+
+The TSIAW will strive to push the boundaries of time synchronization research by facilitating collaboration between industry and academia. This will involve identifying critical research areas, promoting joint research projects, and disseminating findings and solutions through conferences, workshops, repositories, and publications.  (First virtually) (Not focused on crazy precise, more on applications)
+
+=== Foster a dynamic, vibrant and knowledgeable community of time synchronization experts ===
+
+The TSIAW will create a platform for communication and collaboration among industry professionals, academics, and researchers working on time synchronization
+
+== Projects ==
+
+=== Academic / Industry Projects ===
+
+* [https://www.youtube.com/playlist?list=PLAG-eekRQBSjkN0wjfILuqAZQ4Eskk3lb Time Synchronization Industry-Academia call recordings] (YouTube playlist)
+
+These are projects that anyone can develop and present to the community.  They are idea for college projects, thesis, and dissertations.
+
+{| class="wikitable sortable"
+|-
+!
+! Start Date
+! End Date
+! Call For Action
+! Statement
+! Introduction Slides
+! Wiki
+|-
+| '''#1'''
+| 5/1/2024
+| Open
+| Artificial Intelligence / Machine Learning College Project
+| A Precisely Synchronized Datacenter Would Improve Overall Performance of Distributed Artificial Intelligence and Machine Learning
+| [https://drive.google.com/file/d/15bpUlr-q7Afq8RV586CTfsbRdfwEWU75/view?usp=sharing Slides]
+|
+|-
+| '''#2'''
+| 8/26/2024
+| First Project Meeting
+| Artificial Intelligence / Machine Learning College Project
+| First meeting to discuss the AI/ML College Project was recorded for anyone who was not able to attend
+| [https://www.youtube.com/watch?v=i-78CpZ3CYI Video]
+|
+|-
+| '''#3'''
+| 9/19/2024
+| Second Project Meeting
+| Artificial Intelligence / Machine Learning College Project
+| AI/ML Precise Time Projects
+| [https://www.youtube.com/watch?v=4dKOF_N5iVk Video]
+| [https://docs.google.com/document/d/1XuKcEDg4kug7iCV3daywiSTc8V7p3x5hO9Sz_Fh7Aek/edit#heading=h.csjnnp1539t1 Notes]
+|-
+!
+! Start Date
+! End Date
+! Document Title
+! Video
+! Slides
+! Link to Document
+|-
+| '''#1'''
+| 6/1/2024
+| Open
+| Deconstructing Distributed AI/ML with Precise Time
+| [https://drive.google.com/file/d/1qFf0TTT-X8ichtnKZXPuUsu7XUEte3gT/view?usp=drive_link Video]
+| [https://drive.google.com/file/d/1gmNquxI2MHRjgO6nXF7jywYM6Eie3fqo/view?usp=drive_link Slides]
+| [https://docs.google.com/document/d/1kR_wFTu-A_vG1qKgeBKhNwIRIhwLva9GA6Bz32tNoDY/edit Document]
+|-
+! Date
+! Topics and Recordings
+! Speakers
+! Slides
+! Notes
+|-
+| Feb 23rd, 2026
+| [https://drive.google.com/file/d/179wLboHaXVLOV7IU3lFYOHVsMflX7bqc/view?usp=sharing GNSS Under Attack: Interference Trends and Monitoring Insights from the Baltic Sea]
+| Maksim Barodzka, CEP GPSPATRON
+| [https://drive.google.com/file/d/11_iJqXEQfaHtYwUqWUFptqpoFfa1PxqZ/view?usp=sharing Slides]
+|
+|-
+| Feb 2nd, 2026
+| [https://drive.google.com/file/d/1KVI_O12CUGhmDUKVVKfw1ncvqQgjh1CF/view?usp=sharing GNSS-WASP; a wide-area, physical-layer spoofing attack on satellite navigation systems]
+| Christopher Tibaldo, ETH
+| [https://drive.google.com/file/d/1Rbv606cMLZM87JOpBjACG33tecDhQG_k/view?usp=drive_link Slides]
+|
+|-
+| Dec 1st, 2025
+| [https://drive.google.com/file/d/1w7dPfWLxGs3IYU-uGQFKKhHq3F_C0b2U/view?usp=drive_link Picosecond Precision Synchronous Clock and RF Carrier Transmission for Radio Access Network Fronthaul]
+| Dr. Kari A. Clark
+| [https://drive.google.com/file/d/1rwaS6YDeQcc5kKblIiHlSXp9mA_Zo3jB/view?usp=sharing https://drive.google.com/file/d/1rwaS6YDeQcc5kKblIiHlSXp9mA_Zo3jB/view?usp=sharing]
+|
+|-
+| Nov 3rd, 2025
+| [https://www.youtube.com/watch?v=7dBlqrwUgsY Smart Grid Time Synchronization]
+| Ron Rotstein
+| [https://drive.google.com/file/d/1dkevSJccqzhW7qEkTiJcwd8gLO-6N9G7/view?usp=sharing Slides]
+|
+|-
+| Oct 10th, 2025
+| [https://drive.google.com/file/d/1n6UMr_EHzghWDG0WGN2e7CWmShpYperM/view?usp=sharing Multi-Chip Synchronization of Direct RF 20GSPS converters across Phased Array Applications]
+| Ian Beavers, Analog Devices
+| [https://docs.google.com/presentation/d/1-ruZXPJVN5oB3KqwV1kFII_KhgSQ7Aeu/edit?usp=drive_link&ouid=102619743562949298329&rtpof=true&sd=true Slides]
+|
+|-
+| Aug 04th, 2025
+| [https://drive.google.com/file/d/1Oxti8YPqKZJrQVmrRAZStoegEb7rrIz2/view?usp=drive_link FPGA Design and Implementation of Secure IEEE 1588 Precision Timing Protocol for ORAN and 5G New Radio Applications]
+| Hossam Fattah from Lattice Semiconductor
+| [https://drive.google.com/file/d/1eqK_hRmgm_M8z1XT5LhuMzD1fb8nm0vP/view?usp=drive_link Slides]
+|
+|-
+| June 23rd, 2025
+| [https://drive.google.com/file/d/105ZA8_1OA7WepsQQuDdaBYxWPtKtSQWq/view?usp=sharing IEEE P1952 – The resilient PNT equipment standards project]
+| Doug Arnold, Meinberg, USA
+| [https://drive.google.com/file/d/177aQCrRjXanqF3Zd2sgsky3BPl3DFCYT/view?usp=sharing Slides]
+|
+|-
+| June 2nd, 2025
+| [https://drive.google.com/file/d/1TK_BVpvrHkl0BfuPtZRoPu-axSjlcThS/view?usp=sharing Precision Over Fiber: Advancing Frequency & Time Transfer with Next-Generation Technologies]
+| Dr. Kemal Shafak Chief Product Officer Cycle GmbH
+| [https://drive.google.com/file/d/1DmjxLYXtE2bzCvPgd7rk5CzPE-7o65cl/view?usp=sharing Slides]
+|
+|-
+| May 5th, 2025
+| [https://drive.google.com/file/d/15ngi9Soo2kagvyHJIdxc3Px7kFJVenaU/view?usp=sharing Optimizing Energy Efficiency of HPC / AI Data Centers with EAR]
+| Julita Corbalan Gonzalez, CTO Energy Aware Solutions S.L
+| [https://drive.google.com/file/d/12ZoLxWKI9Yhu_VShB_Zw9VPFe4iTqrHN/view?usp=sharing Slides]
+|
+|-
+| April 21st, 2025
+| [https://drive.google.com/file/d/1CIunkDOIuZ-euV5PCG_soy11HBb6I-tk/view?usp=sharing Accelerating AI using Analog In-Memory Compute]
+| Charles Mackin, IBM Research
+| [https://drive.google.com/file/d/1z6KJ8z8Bpr-xAhPERpErFA54pVjBWnb7/view?usp=sharing Slides]
+|
+|-
+| April 7th, 2025
+| [https://drive.google.com/file/d/10YI2IJliOLk_9pP0qVTC3SJAYYFxhwFX/view?usp=sharing Sync and Measure: Resilient and Fault-tolerant Synchronization]
+| Francisco Gerla, SAFRAN
+| [https://drive.google.com/file/d/1EJOcVNh9xOsZ8TaOSEz4CcU-HG6-s9Mt/view?usp=sharing Slides]
+|
+|-
+| March 3rd, 2025
+| [https://drive.google.com/file/d/1BlXsYhNuqEIfodsXpSFkoY5KGZ0iVIQr/view?usp=sharing Unlocking the Power of Precision Jitter Analysis: Enhancing Performance and Tightening Design Margins in Advanced SoCs]
+| Zakir Hussain Syed, Cofounder and CTO of Infinisim
+| [https://drive.google.com/file/d/1F6E5n4I9_6ECLw_B-Qjqd-bRX7ybLOmt/view?usp=sharing Slides]
+|
+|-
+| Feb 17, 2025
+| [https://drive.google.com/file/d/1Xo0ijPgaIy4siQR7Vx1-_fvAfuxYtHgq/view?usp=sharing Predictive Engineering and Artificial Intelligence]
+| Eric retired, Senior Director and Technical Fellow at Medtronic
+| [https://drive.google.com/file/d/1WHIa1sjlAWJJ8vwEPFPd5lM-p4ckVqsF/view?usp=sharing Slides]
+|
+|-
+| Feb 03, 2025
+| [https://drive.google.com/file/d/195c8olVf5JVoQt9pQRdjiXEPOdk2WPp0/view?usp=drive_link Strontium Molecular Lattice Clock in the THz Frequency Regime]
+| Brandon Iritani, Columbia University
+| [https://docs.google.com/presentation/d/1ahcRFz1koGsnUXvp5nXltc-S5-z8Ppb2/edit?usp=drive_link&ouid=117021615644991778504&rtpof=true&sd=true Slides]
+|
+|-
+| Jan 13, 2025
+| [https://drive.google.com/file/d/1B8G-MraXj6lwX5CemSVvJKcgf4vktcJS/view?usp=drive_link Great Sky, Rebuilding AI from first Principles]
+| Jeff Shainline, Founder and CEO GreatSKY.ai
+| [https://drive.google.com/file/d/1jRklyHtgeOHaZnj958fzFgmJDayyuOau/view?usp=drive_link Slides]
+|
+|-
+| Dec 02, 2024
+| Time Transfer and Ensembles Across Moving Platforms
+| Dr. Marc Weiss, National Institute of Standard sand Technology (NIST) Time and Frequency Division in Boulder, Colorado
+| [https://drive.google.com/file/d/1zT6NbEIWv2vo3OWVJVkfrRMlJsixpHPZ/view?usp=sharing Slides]
+|
+|-
+| Nov 20, 2024
+|
+|
+|
+|
+|-
+| Nov 04, 2024
+| [https://www.youtube.com/watch?v=h9MFUUW8TEU Intelligent Synchronization Techniques for Effective Digital Twin Construction]
+| Prof. Xianbin Wang, Department of Electrical and Computer Engineering, Western University, Canada
+|
+|
+|-
+| Oct 22, 2024 – 9PM
+| [https://www.youtube.com/watch?v=pvXY61zCJwo OCP TAP – TSIAW Workstream call]
+|
+|
+|
+|-
+| Oct 9, 2024 – 9PM
+| [https://www.youtube.com/watch?v=ieEtaX6vIrs OCP TAP – TSIAW Workstream call (9PM)]
+|
+|
+|
+|-
+| Oct 9, 2024 – 9AM
+| [https://www.youtube.com/watch?v=ZqZcN8jP5tc OCP TAP – TSIAW Workstream call (9AM)]
+|
+|
+|
+|-
+| Oct 7, 2024
+| Time Synchronization of Optical Switching
+| Dr. Sébastien RUMLEY, Professor, iCoSys Institute
+| [https://drive.google.com/file/d/1b4Zs-nTTtFOs0HiKvRflnMEu-vWXcl8E/view?usp=sharing Slides]
+|-
+| Sep 19, 2024 – 8PM
+| [https://www.youtube.com/watch?v=4dKOF_N5iVk OCP TAP – TSIAW Workstream call (8PM)]
+|
+|
+|
+|-
+| Sep 19, 2024 – 9AM
+| [https://www.youtube.com/watch?v=4dKOF_N5iVk AI/ML Networking Problems and Potential Solutions with Precise Time]
+| Dan Biederman (Intel), Julian Saint James (Meta)
+|
+| [https://docs.google.com/document/d/1XuKcEDg4kug7iCV3daywiSTc8V7p3x5hO9Sz_Fh7Aek/edit?usp=sharing Meeting Notes]
+|-
+| Sep 02, 2024
+| [https://www.youtube.com/watch?v=-0KZYs0_icI Bringing Together Precise Timing, Telecoms and Digital Twin]
+| Dr. Chris Murphy, Regional CTO, EMEA
+| [https://drive.google.com/file/d/19L8nThs9mdfj3JpZAVWABrm2cb7Oki5x/view?usp=sharing Slides]
+|
+|-
+| Aug 26, 2024
+| [https://www.youtube.com/watch?v=i-78CpZ3CYI Workstream Call]
+| Dan Biderman
+|
+|
+|-
+| July 01, 2024
+| [https://www.youtube.com/watch?v=6BpGILNzciQ Quantum Time Transfer]
+| David Mitlying
+| [https://www.dropbox.com/scl/fi/uv2xfyodv7mwjmgptnds9/Xairos_TSIAW-Presentation_1-July-2024_final.pdf?rlkey=k79d8engo0814utyukm7lto5b&dl=0 Slides]
+|
+|-
+| Jun 03, 2024
+| [https://www.youtube.com/watch?v=yGkm7d7W3uY TF techniques for quantum networks]
+| Tara Fortier
+| [https://drive.google.com/file/d/15eoPc0EtLbz4xPZP3Q1sO1WSO7ZKT1-u/view?usp=drive_link Slides]
+|
+|-
+| May-1, 2024
+| [https://www.youtube.com/watch?v=50MZuNsYYEs TSIAW Academic Project #1 AI/ML Performance Improvements]
+| Hesham ElBakoury, Dan Biederman (Intel)
+| [https://drive.google.com/file/d/15bpUlr-q7Afq8RV586CTfsbRdfwEWU75/view?usp=sharing Dan’s Slides], [https://docs.google.com/presentation/d/1rsuoZZJ60BTKsQxBWaC2OFGYR6QUdNwF/edit?usp=sharing&ouid=104727018165459345315&rtpof=true&sd=true Hesham’s Slides]
+| === 2026 === * August 05, 2026 ([https://www.youtube.com/watch?v=JDWL1RWbNm0 YouTube]) * August 03, 2026 ([https://www.youtube.com/watch?v=p2JEID89L6g YouTube]) * July 31, 2026 ([https://www.youtube.com/watch?v=chKVMkU-Wg4 YouTube]) * July 29, 2026 ([https://www.youtube.com/watch?v=-Kq7suaBLo0 YouTube]) * July 20, 2026 ([https://www.youtube.com/watch?v=eAJD-Ppzydk YouTube]) * July 09, 2026 ([https://www.youtube.com/watch?v=yqnwhJzAa_c YouTube]) * July 06, 2026 ([https://www.youtube.com/watch?v=-60mfexVJxI YouTube]) * June 29, 2026 ([https://www.youtube.com/watch?v=1qvF10M6icQ YouTube]) * June 22, 2026 ([https://www.youtube.com/watch?v=Sm5wAvBQat4 YouTube]) * June 16, 2026 ([https://www.youtube.com/watch?v=MhSm9jYZPfQ YouTube]) * June 04, 2026 ([https://www.youtube.com/watch?v=10IjP-DHWhg YouTube]) * June 02, 2026 ([https://www.youtube.com/watch?v=he79BNx45zQ YouTube]) * June 01, 2026 ([https://www.youtube.com/watch?v=VkPucOveHnc YouTube]) * May 29, 2026 ([https://www.youtube.com/watch?v=n2qdScuv35E YouTube]) * May 22, 2026 ([https://www.youtube.com/watch?v=bht3rAmFGjc YouTube]) * May 22, 2026 ([https://www.youtube.com/watch?v=e8G84ot7kVE YouTube]) * May 22, 2026 ([https://www.youtube.com/watch?v=xZsT5K9yJBY YouTube]) * May 22, 2026 ([https://www.youtube.com/watch?v=mc5-TC5XTYk YouTube]) * May 22, 2026 ([https://www.youtube.com/watch?v=ics4mOj_nN4 YouTube]) * May 22, 2026 ([https://www.youtube.com/watch?v=82XXew0FASg YouTube]) * May 22, 2026 ([https://www.youtube.com/watch?v=QsLghtVQ2-A YouTube]) * May 22, 2026 ([https://www.youtube.com/watch?v=5_zupoVRQZ0 YouTube]) * May 22, 2026 ([https://www.youtube.com/watch?v=GU9ESaTepNA YouTube])
+|}

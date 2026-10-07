@@ -1,0 +1,19 @@
+''Recovered from the OCP wiki snapshot dated 2022-12-21. See [[TAP:Restoration notes]] for coverage.''
+
+[[File:Screenshot_2020-07-01_16.35.12.png|right]]
+==Data Center PTP Profile - Workstream #2==
+[[Time Appliance Project|Time Appliances Project]]
+
+==Objective==
+Development of a PTP Profile to serve time-sensitive applications within Data Center environment
+: - Link to current DC PTP Profile: [https://www.opencompute.org/documents/ocp-dc-ptp-profile-v1r1-pdf-2]
+: - 2
+: - 3
+
+==Project Team==
+:- Lead: [mailto:michelouellette@meta.com Michel Ouellette (Meta)]
+:- Lead: [mailto:tkernen@nvidia.com Thomas Kernen (NVIDIA)]
+:-
+
+==Get Involved==
+* Mailing List

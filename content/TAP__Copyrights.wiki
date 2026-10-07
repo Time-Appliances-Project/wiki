@@ -1,0 +1,7 @@
+Recovered OCP wiki content is attributed to the Open Compute Project Foundation and its contributors. The original wiki Main Page states Creative Commons Attribution 4.0 International, copyright 2018 Open Compute Project Foundation.
+
+* [https://creativecommons.org/licenses/by/4.0/ License terms]
+* [https://www.opencompute.org/wiki/Main_Page Original licensing page]
+* [[TAP:Restoration notes|Recovery sources and changes]]
+
+The restored site preserves contributor attribution in imported revision history. Current pages have been reformatted and internal links updated. Linked specifications, presentations, software, logos, and other third-party works retain their own terms. The content license does not grant trademark rights.

@@ -1,0 +1,23 @@
+== Recovery coverage ==
+Recovered on 7 October 2026 from public OCP sources.
+
+* 12 original pages and 847 historical revisions from the surviving OCP staging wiki. The latest recovered revision is 22 February 2023.
+* Main TAP page updated from the current OCP site, including 14 workstreams, 168 past-call rows, and upcoming call 169.
+* Current resources recovered for Open Atomic Ethernet, Open Time Server Cluster, Unified Intelligent Infrastructure, and Time Synchronization Industry-Academia.
+* Two original image files recovered. External slides, videos, documents, and source repositories remain links.
+
+The 2023 snapshot does not contain later revisions. Missing pages are clearly marked, not represented as restored. Existing recovered workstream pages may contain historical contact information or numbering.
+
+== Missing pages ==
+* [[Wireless TimeSync]]
+* [[PTM Readiness]]
+* [[Lunar Timekeeping System]]
+* [[TAP 2023 OCP Regional Summit]]
+
+== Changes during migration ==
+Source text was converted to editable wikitext where necessary. Old OCP wiki links now point to local pages. Punctuation was normalized. The original historical export is retained separately, unchanged. Imported contributors are prefixed with ocp to distinguish historical identities from accounts on this wiki.
+
+== Sources ==
+* [https://www.opencompute.org/projects/time-appliances-project-tap/ Current OCP TAP page]
+* [https://ocpstagingweb2.opencompute.org/wiki/Time_Appliances_Project Surviving staging wiki]
+* [https://github.com/Time-Appliances-Project/wiki Repository and recovery manifest]

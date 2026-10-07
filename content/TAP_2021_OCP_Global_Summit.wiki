@@ -1,0 +1,55 @@
+''Recovered from the OCP wiki snapshot dated 2022-10-23. See [[TAP:Restoration notes]] for coverage.''
+
+= OCP Global Summit | 2021 | Time Appliances Project =
+
+==TAP Sessions==
+{| class="wikitable"
+|-
+| PTP @ Scale: Learning from FB’s Journey
+| Dotan Levi
+| [https://2021ocpglobal.fnvirtual.app/a/event/1864 Video]
+|
+
+|-
+| Introducing Open Time Server
+| Elad Wind, Julian St. James
+| [https://2021ocpglobal.fnvirtual.app/a/event/1865 Video]
+|
+
+|-
+| Precision Time Protocol Profile for Data Center Applications & Related Network Requirements
+| Thomas Kernen, Michel Ouellette
+| [https://2021ocpglobal.fnvirtual.app/a/event/1880 Video]
+|
+
+|-
+| Specifying Oscillator Holdover for Data Centers
+| Gary Giust, Nazariy Tshchynskyy
+| [https://2021ocpglobal.fnvirtual.app/a/event/1855 Video]
+|
+
+|-
+| Fault-tolerance for PTP
+| Gautam Kumar, Yuliang Li
+| [https://2021ocpglobal.fnvirtual.app/a/event/1868 Video]
+|
+
+|-
+| Throughput Improvements of Hyperscaled Distributed Databases based on Precision Timing
+| Georgi Chalakov
+| [https://2021ocpglobal.fnvirtual.app/a/event/1871 Video]
+|
+
+|-
+| Challenges and Solutions in PTP Based Time Sync in Hyper-Scale Data Centers
+| Amit Oren
+| [https://2021ocpglobal.fnvirtual.app/a/event/1870 Video]
+|
+
+|-
+| Boundary Clocks vs Transparent Clocks in Hyperscale Network
+| Rohit Puri
+| [https://2021ocpglobal.fnvirtual.app/a/event/1866 Video]
+|
+
+|}

@@ -1,0 +1,82 @@
+{
+  "source": "https://ocpstagingweb2.opencompute.org/w/",
+  "retrieved": "2026-10-07",
+  "tls_note": "Public staging certificate expired; read without TLS verification.",
+  "sha256_uncompressed": "ecea95aef3d00fbec2752de80e407675e0deceeec0a15e87eaf49324069a46d5",
+  "pages": [
+    {
+      "title": "Time Appliances Project",
+      "revisions": 701,
+      "latest": "2023-02-22T22:25:55Z"
+    },
+    {
+      "title": "Time Appliance Project",
+      "revisions": 1,
+      "latest": "2020-08-25T16:50:18Z"
+    },
+    {
+      "title": "Time Appliances Project APIs",
+      "revisions": 1,
+      "latest": "2021-12-03T21:21:56Z"
+    },
+    {
+      "title": "TAP 2020 OCP Tech Week",
+      "revisions": 11,
+      "latest": "2022-03-31T19:23:55Z"
+    },
+    {
+      "title": "TAP 2021 OCP Global Summit",
+      "revisions": 6,
+      "latest": "2022-10-23T21:01:12Z"
+    },
+    {
+      "title": "TAP 2022 OCP Global Summit",
+      "revisions": 10,
+      "latest": "2022-11-09T19:18:03Z"
+    },
+    {
+      "title": "TAP 2022 OCP Tech Week",
+      "revisions": 23,
+      "latest": "2022-06-15T18:34:14Z"
+    },
+    {
+      "title": "TAP Instrumentation",
+      "revisions": 28,
+      "latest": "2022-11-10T17:06:09Z"
+    },
+    {
+      "title": "TAP Oscillators",
+      "revisions": 23,
+      "latest": "2022-11-30T20:54:28Z"
+    },
+    {
+      "title": "TAP PTP Profile",
+      "revisions": 5,
+      "latest": "2022-12-21T03:17:47Z"
+    },
+    {
+      "title": "TAP PTP Servos",
+      "revisions": 24,
+      "latest": "2022-11-05T20:35:51Z"
+    },
+    {
+      "title": "TAP Precision Time APIs",
+      "revisions": 14,
+      "latest": "2022-01-11T02:04:28Z"
+    }
+  ],
+  "files": [
+    {
+      "title": "File:OCP-TAP-Tech-Talk-2022-Banner.png",
+      "url": "https://ocpstagingweb2.opencompute.org/w/images/c/cb/OCP-TAP-Tech-Talk-2022-Banner.png",
+      "file": "OCP-TAP-Tech-Talk-2022-Banner.png",
+      "sha256": "431c573a66e1d800071d7cf9687222d75678b8558c49088d61b36510ef9b1b8d"
+    },
+    {
+      "title": "File:Screenshot 2020-07-01 16.35.12.png",
+      "url": "https://ocpstagingweb2.opencompute.org/w/images/a/a5/Screenshot_2020-07-01_16.35.12.png",
+      "file": "Screenshot_2020-07-01_16.35.12.png",
+      "sha256": "e28ddd40cc5401573ccae9b31bc42014cab8880282765e449269a142124c8eb8"
+    }
+  ]
+}

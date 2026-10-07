@@ -1,0 +1,164 @@
+[
+  {
+    "title": "Academia Industry Engagement",
+    "file": "Academia_Industry_Engagement.wiki",
+    "source": "https://www.opencompute.org/projects/time-appliances-project-tap/time-synchronization-industry-academia/",
+    "status": "current OCP content converted to editable wikitext"
+  },
+  {
+    "title": "Help:Editing",
+    "file": "Help__Editing.wiki",
+    "source": "restoration",
+    "status": "editor guidance"
+  },
+  {
+    "title": "Lunar Timekeeping System",
+    "file": "Lunar_Timekeeping_System.wiki",
+    "source": "https://www.opencompute.org/wiki/Lunar_Timekeeping_System",
+    "status": "missing source; explicitly marked placeholder"
+  },
+  {
+    "title": "Main Page",
+    "file": "Main_Page.wiki",
+    "source": "restoration",
+    "status": "navigation"
+  },
+  {
+    "title": "MediaWiki:Mainpage",
+    "file": "MediaWiki__Mainpage.wiki",
+    "source": "restoration",
+    "status": "navigation"
+  },
+  {
+    "title": "MediaWiki:Sidebar",
+    "file": "MediaWiki__Sidebar.wiki",
+    "source": "restoration",
+    "status": "navigation"
+  },
+  {
+    "title": "Open Atomic Ethernet",
+    "file": "Open_Atomic_Ethernet.wiki",
+    "source": "https://www.opencompute.org/projects/time-appliances-project-tap/open-atomic-ethernet/",
+    "status": "current OCP content converted to editable wikitext"
+  },
+  {
+    "title": "Open Time Server Cluster",
+    "file": "Open_Time_Server_Cluster.wiki",
+    "source": "https://www.opencompute.org/projects/time-appliances-project-tap/open-time-server-cluster/",
+    "status": "current OCP content converted to editable wikitext"
+  },
+  {
+    "title": "PTM Readiness",
+    "file": "PTM_Readiness.wiki",
+    "source": "https://www.opencompute.org/wiki/PTM_Readiness",
+    "status": "missing source; explicitly marked placeholder"
+  },
+  {
+    "title": "TAP 2020 OCP Tech Week",
+    "file": "TAP_2020_OCP_Tech_Week.wiki",
+    "source": "original-history.xml.gz",
+    "status": "recovered original wikitext"
+  },
+  {
+    "title": "TAP 2021 OCP Global Summit",
+    "file": "TAP_2021_OCP_Global_Summit.wiki",
+    "source": "original-history.xml.gz",
+    "status": "recovered original wikitext"
+  },
+  {
+    "title": "TAP 2022 OCP Global Summit",
+    "file": "TAP_2022_OCP_Global_Summit.wiki",
+    "source": "original-history.xml.gz",
+    "status": "recovered original wikitext"
+  },
+  {
+    "title": "TAP 2022 OCP Tech Week",
+    "file": "TAP_2022_OCP_Tech_Week.wiki",
+    "source": "original-history.xml.gz",
+    "status": "recovered original wikitext"
+  },
+  {
+    "title": "TAP 2023 OCP Regional Summit",
+    "file": "TAP_2023_OCP_Regional_Summit.wiki",
+    "source": "https://www.opencompute.org/wiki/TAP_2023_OCP_Regional_Summit",
+    "status": "missing source; explicitly marked placeholder"
+  },
+  {
+    "title": "TAP Data Center PTP Profile",
+    "file": "TAP_Data_Center_PTP_Profile.wiki",
+    "source": "restoration",
+    "status": "alias"
+  },
+  {
+    "title": "TAP Instrumentation",
+    "file": "TAP_Instrumentation.wiki",
+    "source": "original-history.xml.gz",
+    "status": "recovered original wikitext"
+  },
+  {
+    "title": "TAP Oscillators",
+    "file": "TAP_Oscillators.wiki",
+    "source": "original-history.xml.gz",
+    "status": "recovered original wikitext"
+  },
+  {
+    "title": "TAP PTP Profile",
+    "file": "TAP_PTP_Profile.wiki",
+    "source": "original-history.xml.gz",
+    "status": "recovered original wikitext"
+  },
+  {
+    "title": "TAP PTP Servos",
+    "file": "TAP_PTP_Servos.wiki",
+    "source": "original-history.xml.gz",
+    "status": "recovered original wikitext"
+  },
+  {
+    "title": "TAP Precision Time APIs",
+    "file": "TAP_Precision_Time_APIs.wiki",
+    "source": "original-history.xml.gz",
+    "status": "recovered original wikitext"
+  },
+  {
+    "title": "TAP:Copyrights",
+    "file": "TAP__Copyrights.wiki",
+    "source": "OCP wiki Main Page",
+    "status": "source attribution"
+  },
+  {
+    "title": "TAP:Restoration notes",
+    "file": "TAP__Restoration_notes.wiki",
+    "source": "restoration",
+    "status": "recovery scope"
+  },
+  {
+    "title": "Time Appliance Project",
+    "file": "Time_Appliance_Project.wiki",
+    "source": "original-history.xml.gz",
+    "status": "recovered original wikitext"
+  },
+  {
+    "title": "Time Appliances Project",
+    "file": "Time_Appliances_Project.wiki",
+    "source": "https://www.opencompute.org/projects/time-appliances-project-tap/",
+    "status": "current OCP content converted to editable wikitext"
+  },
+  {
+    "title": "Time Appliances Project APIs",
+    "file": "Time_Appliances_Project_APIs.wiki",
+    "source": "original-history.xml.gz",
+    "status": "recovered original wikitext"
+  },
+  {
+    "title": "Unified Intelligent Infrastructure",
+    "file": "Unified_Intelligent_Infrastructure.wiki",
+    "source": "https://www.opencompute.org/projects/time-appliances-project-tap/unified-intelligent-infrastructure/",
+    "status": "current OCP content converted to editable wikitext"
+  },
+  {
+    "title": "Wireless TimeSync",
+    "file": "Wireless_TimeSync.wiki",
+    "source": "https://www.opencompute.org/wiki/Wireless_TimeSync",
+    "status": "missing source; explicitly marked placeholder"
+  }
+]

@@ -1,0 +1,11 @@
+* navigation
+** Time Appliances Project|TAP home
+** Time Appliances Project#Workstreams|Workstreams
+** Time Appliances Project#Regular_Project_Calls|Project calls
+** Time Appliances Project#Recordings_from_Past_Calls|Recordings
+** Help:Editing|How to edit
+** TAP:Restoration notes|Restoration notes
+** Special:RecentChanges|Recent changes
+* SEARCH
+* TOOLBOX
+* LANGUAGES

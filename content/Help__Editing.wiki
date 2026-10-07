@@ -1,0 +1,19 @@
+== Edit a page ==
+Log in, open a page, and select Edit or Edit source. Each section also has its own edit link. Add a short edit summary and save. History lets you compare revisions and undo changes.
+
+== Accounts ==
+Reading is public. Editing requires an account. Administrators create contributor accounts at [[Special:CreateAccount]]. Password reset by email is not configured; contact an administrator if you need a reset.
+
+== Add a meeting ==
+On [[Time Appliances Project]], edit Upcoming Calls or Recordings from Past Calls. Copy an existing table row and replace the number, date, title, speaker, recording URL, and slide URL. Use Show preview before saving.
+
+== Add a page or attachment ==
+Search for the new page title, then follow the creation link. Upload permitted attachments at [[Special:Upload]] and link them using <nowiki>[[File:example.pdf]]</nowiki>.
+
+== Formatting ==
+* Section: <nowiki>== Section title ==</nowiki>
+* Local link: <nowiki>[[Page title|Link label]]</nowiki>
+* External link: <nowiki>[https://example.org Link label]</nowiki>
+* List: start each line with <nowiki>*</nowiki>.
+
+Edits are stored immediately in the wiki database. The repository contains the initial recovery and deployment files, not a live copy of subsequent edits. Administrators should run the backup script regularly.

@@ -1,0 +1,85 @@
+''Recovered from the OCP wiki snapshot dated 2022-11-09. See [[TAP:Restoration notes]] for coverage.''
+
+= OCP Global Summit | 2022 | Time Appliances Project =
+
+==TAP Sessions==
+{| class="wikitable"
+
+|-
+| #1
+| Gary Giust
+| New Oscillator Classes Simplify Adoption for Synchronizing Traffic in Data Centers
+| [https://youtube.com/watch?=FTHxoBUxOf4 Video]
+| [https://drive.google.com/file/d/1gu2WTMR1X9AJHjR-XIg8I3wcxHOGDFu_/view?usp=sharing Slides]
+
+|-
+| #2
+| Ullas Kumar
+| A Specification of Reference Oscillator Supporting Many Packet Clocks
+| [https://youtube.com/watch?=uhNmhSFoTrY Video]
+| [https://drive.google.com/file/d/1NX1EUnE7sa7bAexRalwXsBH4PEC9WR5j/view?usp=sharing Slides]
+
+|-
+| #3
+| Xiaochun Liu
+| Implementation Considerations for Holdover Functionality in Oscillators
+| [https://www.youtube.com/watch?v=TZP0OvQr17k Video]
+| [https://drive.google.com/file/d/16n-UHfaGs798navRuKWLal_Axu_l5Ym4/view?usp=sharing Slides]
+
+|-
+| #4
+| Wim Rouwet
+| 3GPP Derived Timing Solutions for Data Center Use
+| [https://youtube.com/watch?=h8LIkEb2cYg Video]
+| [https://drive.google.com/file/d/1r4nHM5cA_S_hi6lJiNahsWhI8Ey0nVCg/view?usp=sharing Slides]
+
+|-
+| #5
+| Anand Ram
+| Clocking the Telco Cloud
+| [https://youtube.com/watch?=Mnj2zKBDcF4 Video]
+| [https://drive.google.com/file/d/1C-QwMg9mlkPfVV1cfF-j1cdLndwHSpwJ/view?usp=sharing Slides]
+
+|-
+| #6
+| Kevin Stanton
+| Precision Time in the Last Few Centimeters
+| [https://youtube.com/watch?=JLUTT-lrDqw Video]
+| [https://drive.google.com/file/d/1AtGmkP7_I4X-HXHmmyylmAwHvB-G2fy7/view?usp=sharing Slides]
+
+|-
+| #7
+| Lasse Johnsen
+| Squared: Scalable PTP Clock Synchronization Mesh Method for Data Centers
+| [https://youtube.com/watch?=RHLIMG6I1sM Video]
+| [https://drive.google.com/file/d/1c-Ir7zWznhWxrZ9g47aHBw8y8jffDRgv/view?usp=sharing Slides]
+
+|-
+| #8
+| Ariel Hendel
+| Simulations, the Data Center PTP Prequel
+| [https://youtube.com/watch?=7dgbV-GT8Ak Video]
+| [https://drive.google.com/file/d/1GOWeYtH_VAN2M7fod16CW6XJo8FRavNl/view?usp=sharing Slides]
+
+|-
+| #9
+| Kenneth Hann
+| Advanced Time Card and Sync Module for Datacenter Synchronization
+| [https://youtube.com/watch?=niiPlY6LD3I Video]
+| [https://drive.google.com/file/d/1azxUUeAtunJnvCezptcER5x-CWOiLP5x/view?usp=sharing Slides]
+
+|-
+| #10
+| Ahmad Byagowi, <BR> Amit Oren, <BR> Eric Spada, <BR> Bhaskar Chinni
+| High Port Density Timing Card for Next Gen Networks
+| [https://youtube.com/watch?=lavW_621DMk Video]
+| [https://drive.google.com/file/d/1kSL_qpush7viZZZQV2CEc8OoQqcm0VrC/view?usp=sharing Slides]
+
+|-
+| #11
+| Nobuyasu Shiga
+| Enabling Pico-Second Level Space-Time Synchronization - NICT Japan
+| Video
+| [https://drive.google.com/file/d/1rfL-wBmJRYgQO8cG8BU-FvfhBdwZZY3c/view?usp=sharing Slides]
+
+|}

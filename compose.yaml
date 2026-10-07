@@ -1,0 +1,43 @@
+name: tap-wiki
+services:
+  database:
+    image: mariadb:10.11
+    restart: unless-stopped
+    environment:
+      MARIADB_DATABASE: tapwiki
+      MARIADB_USER: tapwiki
+      MARIADB_PASSWORD: ${DB_PASSWORD:?Run python3 scripts/configure.py first}
+      MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:?Run python3 scripts/configure.py first}
+    volumes:
+      - database:/var/lib/mysql
+    healthcheck:
+      test: [CMD, healthcheck.sh, --connect, --innodb_initialized]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+  wiki:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      database:
+        condition: service_healthy
+    environment:
+      MW_SERVER: ${MW_SERVER:-http://localhost:8088}
+      MW_ADMIN_USER: ${MW_ADMIN_USER:-TapAdmin}
+      MW_ADMIN_PASSWORD: ${MW_ADMIN_PASSWORD:?Run python3 scripts/configure.py first}
+      DB_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "127.0.0.1:${WIKI_PORT:-8088}:80"
+    volumes:
+      - configuration:/var/www/config
+      - uploads:/var/www/html/images
+    healthcheck:
+      test: [CMD, curl, --fail, --silent, http://localhost/api.php?action=query&meta=siteinfo&format=json]
+      interval: 15s
+      timeout: 5s
+      start_period: 180s
+      retries: 10
+volumes:
+  database:
+  configuration:
+  uploads:
