@@ -118,13 +118,17 @@ Dial in
 - +1 346 248 7799 US (Houston)
 - +1 669 900 6833 US (San Jose)
 
-### Upcoming Calls
+<a name="upcoming-calls"></a>
+
+### [edit](https://github.com/Time-Appliances-Project/wiki/wiki/Home/_edit "Opens the whole-page editor; find Upcoming Calls") Upcoming Calls
 
 |  | Date | Topics | Speakers |
 | --- | --- | --- | --- |
 | #169 | Oct-07, 2026 | Neo Clouds & AI Sovereignty: Deterministic Timing as the Foundation of Trusted Distributed Intelligence | Ankur Sharma, Ramki Ramakrishnan |
 
-### Recordings from Past Calls
+<a name="recordings-from-past-calls"></a>
+
+### [edit](https://github.com/Time-Appliances-Project/wiki/wiki/Home/_edit "Opens the whole-page editor; find Recordings from Past Calls") Recordings from Past Calls
 
 | Index | Date | Topics | Speakers | Slides |
 | --- | --- | --- | --- | --- |
