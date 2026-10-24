@@ -16,6 +16,10 @@ The GitHub Wiki PTM Readiness page was restored from the [3 August 2025 Wayback 
 
 The original `content/`, `seed.xml`, and `content-manifest.json` remain the 7 October MediaWiki recovery snapshot; their PTM placeholder is superseded in the live GitHub Wiki and `wiki/PTM-Readiness.md`.
 
+## Additional recovery: Wireless TimeSync
+
+On 25 October 2026, indexed text returned for the original OCP Wireless TimeSync URL identified revision 75153 and supplied the purpose, objectives, and project team. The Documents, Regular Project Calls, and Recording from Past Calls sections had empty headings. `recovered-text/Wireless_TimeSync-75153.txt` is a transcription of that returned text, not raw HTML or a MediaWiki export. `wireless-timesync-recovery.json` records its checksum and limits. No Wayback capture was located; the revision date, full history, contact link destinations, and images were not recovered. The GitHub Wiki and `wiki/Wireless-TimeSync.md` now contain this recovery; the initial MediaWiki seed is unchanged.
+
 ## Initial 7 October coverage and limitations
 
 - Original TAP pages: 12, with 847 historical revisions.

@@ -1,0 +1,32 @@
+{
+  "original_url": "https://www.opencompute.org/wiki/Wireless_TimeSync",
+  "original_revision_id": 75153,
+  "retrieved": "2026-10-25",
+  "recovery_method": "Indexed text returned by web search and open for the original OCP URL, not a raw HTML archive or MediaWiki export. The current origin redirects to the general TAP page; no Wayback capture was located.",
+  "page_last_edited": null,
+  "snapshot": "migration/recovered-text/Wireless_TimeSync-75153.txt",
+  "sha256": "e3ff009e8a0384b9cbd400319f1274855b5a5dd0a2b53f721c7a509b50c3ff4b",
+  "source_sections": [
+    "Precision Time Synchronization over Wireless- Workstream #7",
+    "Objectives",
+    "Project Team",
+    "Documents",
+    "Regular Project Calls",
+    "Recording from Past Calls"
+  ],
+  "empty_sections": [
+    "Documents",
+    "Regular Project Calls",
+    "Recording from Past Calls"
+  ],
+  "restored_blocks": [
+    "The aim of this project is to develop a wireless precision time synchronization solution that can be implemented in data centers to enhance availability, precision, traceability and resilience of the time sync. The workstream will explore the feasibility of wireless two-way time and frequency comparison over existing wireless communication standards such as Wi-Fi, Zigbee, Bluetooth, LoRa, among others.\n\nThe goal is to provide a precise synchronization to uses via wireless synchronization. By transforming any wireless communication device into a precision synchronization device, we aim to synchronize the user devices and the data centers.",
+    "To make precision time available to devices through diverse wireless communication channel The project includes:\n\n- Wireless synchronization with software defined radio (with RF chipsets: LoRa, Sub GHz, 60GHz, THz, etc)\n- Wireless synchronization with Wi-Fi Chipsets\n- Wireless synchronization with RF chipsets in general",
+    "- Lead: Nobuyasu Shiga, Ph.D.\n- Co-Lead: Julian St. James\n- Co-Lead: Aditya Arun"
+  ],
+  "limitations": [
+    "Source revision date and full revision history not recovered.",
+    "Contact link destinations and page images were not recovered in the indexed text.",
+    "Original heading used workstream #7; restored heading omits the historical number because the current main page lists this workstream as #8."
+  ]
+}

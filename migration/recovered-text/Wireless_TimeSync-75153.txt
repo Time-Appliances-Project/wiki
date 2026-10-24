@@ -1,0 +1,31 @@
+Wireless TimeSync
+
+Precision Time Synchronization over Wireless- Workstream #7
+
+Back to Time Appliances Project's wiki
+
+The aim of this project is to develop a wireless precision time synchronization solution that can be implemented in data centers to enhance availability, precision, traceability and resilience of the time sync. The workstream will explore the feasibility of wireless two-way time and frequency comparison over existing wireless communication standards such as Wi-Fi, Zigbee, Bluetooth, LoRa, among others.
+
+The goal is to provide a precise synchronization to uses via wireless synchronization. By transforming any wireless communication device into a precision synchronization device, we aim to synchronize the user devices and the data centers.
+
+Objectives
+
+To make precision time available to devices through diverse wireless communication channel The project includes:
+
+- Wireless synchronization with software defined radio (with RF chipsets: LoRa, Sub GHz, 60GHz, THz, etc)
+- Wireless synchronization with Wi-Fi Chipsets
+- Wireless synchronization with RF chipsets in general
+
+Project Team
+
+- Lead: Nobuyasu Shiga, Ph.D.
+- Co-Lead: Julian St. James
+- Co-Lead: Aditya Arun
+
+Documents
+
+Regular Project Calls
+
+Recording from Past Calls
+
+Retrieved from "https://www.opencompute.org/w/index.php?title=Wireless_TimeSync&oldid=75153"

@@ -15,11 +15,14 @@ On 25 October 2026, all 35 hardware rows and the project team were restored to [
 
 The initial MediaWiki seed and content manifest retain the original 7 October recovery state, which predates this additional GitHub Wiki recovery. The additional source and checksums are in [the PTM recovery manifest](https://github.com/Time-Appliances-Project/wiki/blob/main/migration/ptm-readiness-recovery.json).
 
+## Additional recovery: Wireless TimeSync
+
+On 25 October 2026, the purpose, three objectives, and three project-team entries were restored to [Wireless TimeSync](Wireless-TimeSync) from indexed text of the original OCP page, revision 75153. Its Documents, Regular Project Calls, and Recording from Past Calls headings had no entries in that source text. The revision date, contact destinations, images, raw HTML, and full history were not recovered. [The recovery manifest](https://github.com/Time-Appliances-Project/wiki/blob/main/migration/wireless-timesync-recovery.json) records this evidence and its limits. The initial MediaWiki seed retains the earlier placeholder.
+
 ## Missing sources
 
 The original source for these pages was not found. Their former URLs now redirect to the general OCP TAP page, and the pages are absent from the surviving February 2023 snapshot:
 
-- [Wireless TimeSync](Wireless-TimeSync)
 - [Lunar Timekeeping System](Lunar-Timekeeping-System)
 - [2023 OCP Regional Summit TAP page](TAP-2023-OCP-Regional-Summit)
 
