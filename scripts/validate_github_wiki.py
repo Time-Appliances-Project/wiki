@@ -26,7 +26,7 @@ for name, path in pages.items():
             assert len(re.split(r'(?<!\\)\|', row)) == 7, (name, row)
         numbers += [int(n) for n in re.findall(r'^\| #(\d+)', past, re.M)]
 assert sorted(numbers) == list(range(1, 169)), 'Recording rows missing or duplicated'
-for name in ('Lunar-Timekeeping-System', 'TAP-2023-OCP-Regional-Summit'):
+for name in ('Lunar-Timekeeping-System',):
     assert 'original source has not yet been recovered' in pages[name].read_text()
 ptm = json.loads((root / 'migration/ptm-readiness-recovery.json').read_text())
 source = gzip.decompress((root / ptm['snapshot']).read_bytes())
@@ -48,4 +48,13 @@ for heading in wireless['empty_sections']:
 assert '75153' in restored and wireless['original_url'] in restored
 for image in (root / 'migration/uploads').iterdir():
     assert image.read_bytes() == (root / 'wiki/images' / image.name).read_bytes()
-print(f'PASS: {len(pages)} Markdown files, local links, 168 recording rows, 35 PTM rows, Wireless TimeSync source text, images, and two marked gaps.')
+audit = json.loads((root / 'migration/wiki-audit-2026-10-25.json').read_text())
+assert hashlib.sha256((root / audit['source_evidence']).read_bytes()).hexdigest() == audit['source_sha256']
+summit = pages['TAP-2023-OCP-Regional-Summit'].read_text()
+assert len(re.findall(r'^\| [12] \|', summit, re.M)) == 2
+assert summit.count('[Video](') == summit.count('[Slides](') == 2
+for slug in ('workstreams', 'upcoming-calls', 'recordings-from-past-calls'):
+    assert f'<a name="{slug}"></a>' in pages['Home'].read_text()
+assert pages['TAP-Instrumentation'].read_text().count('Link not yet recovered') == 3
+assert '[Join the meeting (historical link)](https://teams.microsoft.com/' in pages['TAP-PTP-Servos'].read_text()
+print(f'PASS: {len(pages)} Markdown files, local links, 168 recording rows, 35 PTM rows, Wireless TimeSync source text, images, Regional Summit sessions, section navigation, and marked remaining gaps.')

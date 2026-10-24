@@ -20,6 +20,10 @@ The original `content/`, `seed.xml`, and `content-manifest.json` remain the 7 Oc
 
 On 25 October 2026, indexed text returned for the original OCP Wireless TimeSync URL identified revision 75153 and supplied the purpose, objectives, and project team. The Documents, Regular Project Calls, and Recording from Past Calls sections had empty headings. `recovered-text/Wireless_TimeSync-75153.txt` is a transcription of that returned text, not raw HTML or a MediaWiki export. `wireless-timesync-recovery.json` records its checksum and limits. No Wayback capture was located; the revision date, full history, contact link destinations, and images were not recovered. The GitHub Wiki and `wiki/Wireless-TimeSync.md` now contain this recovery; the initial MediaWiki seed is unchanged.
 
+## Page audit on 25 October 2026
+
+`wiki-audit-2026-10-25.json` records the review of 44 live Markdown files. `recovered-text/additional-wiki-audit-2026-10-25.txt` preserves transcribed evidence for two Regional Summit sessions and three later Instrumentation entries. Summit media links came from the matching sessions on the official OCP event page. Instrumentation recording URLs remain unavailable. The audit also restored a PTP Servos meeting URL lost in conversion and verified the existing main-page section anchors. The original MediaWiki seed remains unchanged.
+
 ## Initial 7 October coverage and limitations
 
 - Original TAP pages: 12, with 847 historical revisions.

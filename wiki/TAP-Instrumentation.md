@@ -1,4 +1,4 @@
-*Recovered from the OCP wiki snapshot dated 2022-11-10. See [TAP:Restoration notes](Restoration-notes) for coverage.*
+*Recovered from the OCP wiki snapshot dated 2022-11-10, supplemented on 25 October 2026 with later indexed original-page text. See [restoration notes](Restoration-notes) for coverage.*
 
 <img src="https://raw.githubusercontent.com/wiki/Time-Appliances-Project/wiki/images/Screenshot_2020-07-01_16.35.12.png" alt="Time Appliances Project" width="135">
 
@@ -18,7 +18,9 @@ Open source ecosystem for instrumentation and measurement software and tools. Sc
 
 ## Meeting invite
 
-8:00am - 8:30am PST every Second and Fourth Thursday: [Launch Teams Meeting Link](https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_OGE1MzNkMGMtZDRjMS00YzFiLTg4MTAtZjcxNzEwYzI2ODIy%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522fbb4e2fb-f802-4d55-beca-b7149551e928%2522%252c%2522Oid%2522%253a%2522cff27e02-befc-4437-98d5-96034f77b90c%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=5f0bbd41-a286-4e8b-b786-5162812cfe21&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true)
+Historical schedule in the later source: 8:00am - 8:30am PST, second Thursday every month. The meeting link below is retained from the 2022 snapshot; current availability is unverified.
+
+[Launch Teams Meeting Link](https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_OGE1MzNkMGMtZDRjMS00YzFiLTg4MTAtZjcxNzEwYzI2ODIy%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522fbb4e2fb-f802-4d55-beca-b7149551e928%2522%252c%2522Oid%2522%253a%2522cff27e02-befc-4437-98d5-96034f77b90c%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=5f0bbd41-a286-4e8b-b786-5162812cfe21&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true)
 
 ## Recording from Past Calls
 
@@ -33,6 +35,18 @@ Open source ecosystem for instrumentation and measurement software and tools. Sc
 [27 October 2022 PTP Simulator Demo](https://drive.google.com/file/d/1uO8RtSFO5l7xTY6mTIrsImsP2iaRvyNC/view?usp=sharing)
 
 [10 November 2022 Monitoring Discussion](https://drive.google.com/file/d/1sZzXC85Pl4viJoBF0x6Y_eYNiCe-YtY-/view?usp=sharing)
+
+### Later entries recovered from indexed text
+
+The original OCP page also listed these three calls. Their titles and dates were recovered, but their recording URLs have not yet been recovered.
+
+| Date | Topic | Recording |
+| --- | --- | --- |
+| 11 May 2023 | PTM Testing Kickoff | Link not yet recovered |
+| 28 Sep 2023 | No topic listed in the recovered text | Link not yet recovered |
+| 8 Feb 2024 | Monitoring & Measurement Discussion | Link not yet recovered |
+
+Source: [original OCP Instrumentation page](https://www.opencompute.org/wiki/TAP_Instrumentation), indexed text recovered on 25 October 2026. Its revision ID and date were unavailable.
 
 ## Hardware Roadmap
 

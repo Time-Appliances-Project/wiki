@@ -1,0 +1,28 @@
+Recovery evidence transcribed on 25 October 2026 from indexed OCP source text.
+This is a text transcription, not an HTML or MediaWiki export.
+
+Source: https://www.opencompute.org/wiki/TAP_2023_OCP_Regional_Summit
+Original revision: 23213
+OCP Regional Summit | 2023 | Time Appliances Project
+TAP Sessions
+#1 | Anand Ram (Calnex) | How Datacenters can be more Efficient | Video | Slides
+#2 | Oleg Obleukhov (Meta), Ahmad Byagowi (Meta) | Simpler PTP: Optimized Precision Time Protocol (PTP) for Datacenters | Video | Slides
+
+Matching official event source:
+https://www.opencompute.org/events/ocp-summit/2023-ocp-regional-summit/
+How Datacenters can be more Efficient:
+Video: https://www.youtube.com/watch?v=EQPqxKRBn5o
+Slides: https://drive.google.com/file/d/1JVwFSg-b42xHKjxdlb_EaueL5X_hUHVL/view?usp=share_link
+Simpler PTP: Optimized Precision Time Protocol (PTP) for Datacenters:
+Video: https://www.youtube.com/watch?v=qKwFDCTvrS4
+Slides: https://drive.google.com/file/d/1-ZdUuISqcqu261AGu6WDmu5HApf2TaKQ/view?usp=share_link
+
+Source: https://www.opencompute.org/wiki/TAP_Instrumentation
+Original revision and date: not recovered
+Meeting invite
+8:00am - 8:30am PST Second Thursday every month: Launch Teams Meeting Link
+Additional entries under Recording from Past Calls:
+11 May 2023 PTM Testing Kickoff
+28 Sep 2023
+8 Feb 2024 Monitoring & Measurement Discussion
+Recording URL destinations: not recovered

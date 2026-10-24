@@ -41,8 +41,9 @@
 
 - Occurs Mondays from 10:00 AM to 11:00 AM Pacific Time
 
+[Join the meeting (historical link)](https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZGY2MWM0ZmQtOWIwNS00NzlkLTk4YzktY2FhOTE2N2VkZDBj%40thread.v2/0?context=%7b%22Tid%22%3a%2263545f27-3232-4d74-a44d-cdd457063402%22%2c%22Oid%22%3a%220726d84b-4ea4-43b6-b5a1-0c77ae495c8c%22%7d)
+
 ```
-click here to join the meeting
 Or call in (audio only)
 +1 707-596-6527,,88796120#
 Phone Conference ID: 887 961 20#

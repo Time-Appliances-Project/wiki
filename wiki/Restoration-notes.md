@@ -19,14 +19,25 @@ The initial MediaWiki seed and content manifest retain the original 7 October re
 
 On 25 October 2026, the purpose, three objectives, and three project-team entries were restored to [Wireless TimeSync](Wireless-TimeSync) from indexed text of the original OCP page, revision 75153. Its Documents, Regular Project Calls, and Recording from Past Calls headings had no entries in that source text. The revision date, contact destinations, images, raw HTML, and full history were not recovered. [The recovery manifest](https://github.com/Time-Appliances-Project/wiki/blob/main/migration/wireless-timesync-recovery.json) records this evidence and its limits. The initial MediaWiki seed retains the earlier placeholder.
 
+## Page audit on 25 October 2026
+
+All 44 Markdown files were reviewed, including 42 public pages and the sidebar and footer. Public pages loaded successfully. The audit compared available recovery-source links, table contents, and internal navigation; it does not establish that every later original revision or external recording is available.
+
+- [2023 OCP Regional Summit](TAP-2023-OCP-Regional-Summit): restored both sessions, with video and slide links from OCP's official event listing. Indexed original-page text identifies revision 23213.
+- [Instrumentation](TAP-Instrumentation): restored three later call entries (11 May 2023, 28 September 2023, and 8 February 2024) and the later historical meeting cadence. The three recording URLs are still missing and explicitly marked.
+- [PTP Servos](TAP-PTP-Servos): restored the historical Teams link lost in conversion to a code block.
+- Main-page navigation: confirmed that the existing custom anchors support the Workstreams, Upcoming Calls, and Recordings from Past Calls links alongside the section edit links.
+- No additional omissions were confirmed in the other recovered workstream and event pages against the available sources. Sparse PTP Profile and Precision Time APIs sections, and blank historical Servos recording cells, were also sparse in the available source. Topic and year pages intentionally link to the continuous main page.
+
+See the [audit record](https://github.com/Time-Appliances-Project/wiki/blob/main/migration/wiki-audit-2026-10-25.json) for scope and remaining limitations.
+
 ## Missing sources
 
 The original source for these pages was not found. Their former URLs now redirect to the general OCP TAP page, and the pages are absent from the surviving February 2023 snapshot:
 
 - [Lunar Timekeeping System](Lunar-Timekeeping-System)
-- [2023 OCP Regional Summit TAP page](TAP-2023-OCP-Regional-Summit)
 
-They are marked as incomplete. Saved page copies or MediaWiki exports can be supplied to a repository maintainer for recovery.
+The Lunar page is marked as incomplete. Saved page copies or MediaWiki exports can be supplied to a repository maintainer for recovery.
 
 ## Changes during migration
 
