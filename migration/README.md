@@ -10,7 +10,13 @@ Recovered on 7 October 2026.
 
 `seed.xml` contains the prepared current pages in MediaWiki import format. The corresponding editable source files are in `../content/`. `content-manifest.json` distinguishes original recovered pages, pages converted from the current site, navigation, and missing-page placeholders.
 
-## Coverage and limitations
+## Additional recovery on 25 October 2026
+
+The GitHub Wiki PTM Readiness page was restored from the [3 August 2025 Wayback capture](https://web.archive.org/web/20250803162843/https://www.opencompute.org/wiki/PTM_Readiness), original revision 80269, last edited 1 July 2025. All 35 rows were transcribed with cell values unchanged. `ptm-readiness-recovery.json` records the source, checksum, column labels, and rows; `snapshots/PTM_Readiness-20250803.html.gz` preserves the unmodified archived HTML. These are historical support reports. Later edits and the full page history were not recovered.
+
+The original `content/`, `seed.xml`, and `content-manifest.json` remain the 7 October MediaWiki recovery snapshot; their PTM placeholder is superseded in the live GitHub Wiki and `wiki/PTM-Readiness.md`.
+
+## Initial 7 October coverage and limitations
 
 - Original TAP pages: 12, with 847 historical revisions.
 - Recovered image files: 2.

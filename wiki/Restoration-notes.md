@@ -9,12 +9,17 @@ Recovered on 7 October 2026 from public OCP sources.
 
 The source export is retained unchanged in the [recovery archive](https://github.com/Time-Appliances-Project/wiki/tree/main/migration), with contributor names, timestamps, and edit summaries. The 847 historical revisions are archived MediaWiki history, not GitHub page-history entries. GitHub Wiki history begins with this migration.
 
+## Additional recovery: PTM readiness
+
+On 25 October 2026, all 35 hardware rows and the project team were restored to [PTM Readiness](PTM-Readiness) from the [3 August 2025 archived OCP page](https://web.archive.org/web/20250803162843/https://www.opencompute.org/wiki/PTM_Readiness). The page identifies revision 80269, last edited 1 July 2025. Table values are preserved as historical reports. Its full revision history and any subsequent updates remain unavailable.
+
+The initial MediaWiki seed and content manifest retain the original 7 October recovery state, which predates this additional GitHub Wiki recovery. The additional source and checksums are in [the PTM recovery manifest](https://github.com/Time-Appliances-Project/wiki/blob/main/migration/ptm-readiness-recovery.json).
+
 ## Missing sources
 
 The original source for these pages was not found. Their former URLs now redirect to the general OCP TAP page, and the pages are absent from the surviving February 2023 snapshot:
 
 - [Wireless TimeSync](Wireless-TimeSync)
-- [PTM Readiness](PTM-Readiness)
 - [Lunar Timekeeping System](Lunar-Timekeeping-System)
 - [2023 OCP Regional Summit TAP page](TAP-2023-OCP-Regional-Summit)
 

@@ -15,7 +15,7 @@ The TAP community wiki is hosted and edited directly on GitHub. No server, Docke
 
 Sign in to GitHub, open a wiki page, click **Edit**, make the change, preview it, and click **Save page**. Repository collaborators with write access can edit and create pages. Reading is public. GitHub keeps the history of edits made since this migration.
 
-The main TAP page restores the original continuous layout, with a contents list, workstreams, documents, meetings, and all recordings together. Former topic and year URLs link to its sections. The restored recording archive includes all 168 past-call entries listed by OCP on 7 October 2026. Four pages with missing source material are explicitly marked. See [restoration notes](https://github.com/Time-Appliances-Project/wiki/wiki/Restoration-notes).
+The main TAP page restores the original continuous layout, with a contents list, workstreams, documents, meetings, and all recordings together. Former topic and year URLs link to its sections. The restored recording archive includes all 168 past-call entries listed by OCP on 7 October 2026. PTM readiness now includes all 35 rows recovered from an August 2025 archive of the original page. Three pages with missing source material remain explicitly marked. See [restoration notes](https://github.com/Time-Appliances-Project/wiki/wiki/Restoration-notes).
 
 ## Live wiki and recovery repository
 
